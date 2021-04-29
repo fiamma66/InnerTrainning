@@ -1,0 +1,872 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python 的基礎 - 語法 &#8212; NetPro Python Inner Training</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python 的基礎 - 檔案操作" href="Basic3.html" />
+    <link rel="prev" title="Python 的安裝" href="Basic.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">NetPro Python Inner Training</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Netpro Python PS 內訓
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  PART1
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="PART1.html">
+   第一部分 ： Python 的 基礎
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic.html">
+     Python 的安裝
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Python 的基礎 - 語法
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic3.html">
+     Python 的基礎 - 檔案操作
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic4.html">
+     Python 的基礎 - Package 的使用與安裝 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic4-5.html">
+     Python 的基礎 - Package 的使用與安裝 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic5.html">
+     Python Lab 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic6.html">
+     Python Lab 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  PART2
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PartII/PART2.html">
+   第二部分 ： Python 的 實際應用 小程式
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/PartI/Basic2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/PartI/Basic2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fiamma66/InnerTrainning"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/fiamma66/InnerTrainning/master?urlpath=tree/PartI/Basic2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   撰寫第一支 Python 程式
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   稍微理解一些基礎語法
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Python 中的邏輯判斷
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Python 中的特殊型態
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Python 中的迴圈
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-if-else">
+   Python 中的 IF ELSE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   動腦 &amp; 練習時間
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     費氏數列
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     終極密碼
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   解答
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     費氏數列 解答
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     終極密碼解答
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#try-catch">
+   除錯 try catch
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python">
+<h1>Python 的基礎 - 語法<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>撰寫第一支 Python 程式<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-hello-world admonition">
+<p class="admonition-title">當然要來 Hello World 一下</p>
+<p>應該沒有不 Hello World 的道理</p>
+</div>
+<div class="cell tag_hide-output tag_show-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=============&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;94 這麼簡單&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello World
+=============
+5
+94 這麼簡單
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>稍微理解一些基礎語法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Token</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>=</p></td>
+<td><p>這個是 asign</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="s1">&#39;ab&#39;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>==</p></td>
+<td><p><a class="reference external" href="#id3">判斷式</a> 相等</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">==</span> <span class="s1">&#39;ab&#39;</span>
+<span class="mi">3</span> <span class="o">==</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>+</p></td>
+<td><p>運算加法、字串串接</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">+</span> <span class="mi">7</span>
+<span class="s1">&#39;Net&#39;</span> <span class="o">+</span> <span class="s1">&#39;Pro&#39;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>-</p></td>
+<td><p>減號</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">-</span> <span class="mi">7</span>
+<span class="mf">1.444</span> <span class="o">-</span> <span class="mf">4.7621</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>*</p></td>
+<td><p>乘號</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="o">*</span> <span class="mi">7</span>
+<span class="s1">&#39;沒想到吧&#39;</span> <span class="o">*</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>/</p></td>
+<td><p>除號</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">/</span> <span class="mi">5</span>
+<span class="mi">1</span><span class="o">/</span> <span class="mi">0</span>  
+<span class="c1"># ZeroDivisionError </span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>%</p></td>
+<td><p>餘數</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">34</span> <span class="o">%</span> <span class="mi">10</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>//</p></td>
+<td><p>商數</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">55</span> <span class="o">//</span> <span class="mi">10</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>**</p></td>
+<td><p>次方</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">8</span> <span class="o">**</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h2>Python 中的邏輯判斷<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 40%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Token</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&gt;</p></td>
+<td><p>大於</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;大於:&quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>&lt;</p></td>
+<td><p>小於</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;小於:&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>&gt;=</p></td>
+<td><p>大於等於</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;大於等於:&quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>==</p></td>
+<td><p>相等</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 文字運算產生布林 (要記得大寫小寫是完全不同的)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;文字相等:&quot;</span><span class="p">,</span> <span class="s2">&quot;hello&quot;</span> <span class="o">==</span> <span class="s2">&quot;HELLO&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>in</p></td>
+<td><p>如同 SQL 的 in</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;文字包含:&quot;</span><span class="p">,</span> <span class="s2">&quot;hel&quot;</span> <span class="ow">in</span> <span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h2>Python 中的特殊型態<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 40%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>List</p></td>
+<td><p>可以儲存不同型態的物件、可遞迴、可重複</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[]</span>  
+<span class="n">my_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Set</p></td>
+<td><p>可以儲存不同型態的物件、可遞迴、<strong>不重複</strong></p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Dict</p></td>
+<td><p>以 key / value，key 必須為 <a class="reference external" href="https://docs.python.org/3/glossary.html#term-hashable"><strong>hashable object</strong></a></p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="n">a</span><span class="p">[</span><span class="s1">&#39;key1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;value1&#39;</span>
+<span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;key1&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="p">[</span><span class="s1">&#39;key1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;fix_value2&#39;</span>
+<span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;key1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Tuple</p></td>
+<td><p>dictionary 的簡化版，<a class="reference external" href="https://medium.com/&#64;oange6214/python-%E5%9F%BA%E7%A4%8E%E7%AD%86%E8%A8%98-%E5%8F%AF%E8%AE%8A%E5%8B%95%E7%9A%84-mutable-%E8%88%87%E4%B8%8D%E5%8F%AF%E8%AE%8A%E5%8B%95%E7%9A%84-immutble-54f1b7a6899"><strong><code class="docutils literal notranslate"><span class="pre">Tuple</span> <span class="pre">是不變的</span></code></strong></a></p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Asign Tuple</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Vincent&#39;</span><span class="p">,</span> <span class="mi">170</span><span class="p">)</span>
+<span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Vincenthsu&#39;</span>  
+<span class="c1"># TypeError </span>
+<span class="c1"># tuple內 value 不可變</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Byte</p></td>
+<td><p>位元 Object <b>特殊使用</b></p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xe6\x88\x91</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h2>Python 中的迴圈<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 38%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>for in</p></td>
+<td><p>for loop 迴圈，<strong>OBJECT</strong>必須是iterable</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">_a</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">_a</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>while</p></td>
+<td><p>常用於 未知次數的迴圈</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># DO SOMETHING</span>
+    <span class="k">break</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="python-if-else">
+<h2>Python 中的 IF ELSE<a class="headerlink" href="#python-if-else" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 38%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>if else</p></td>
+<td><p>一般邏輯判斷，如果不需要 else，可以省略</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">score</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;PASS&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;FAIL&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>if elif</p></td>
+<td><p>多選一，等同於 CASE WHEN</p></td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">選項</span> <span class="n">A</span><span class="p">:</span>
+    <span class="n">A</span> <span class="n">對的話做完這段程式碼離開</span>
+<span class="k">elif</span> <span class="n">選項</span> <span class="n">B</span><span class="p">:</span>
+    <span class="n">B</span> <span class="n">對的話做完這段程式碼離開</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">上面都不對直接做完這段程式碼離開</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id6">
+<h2>動腦 &amp; 練習時間<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3>費氏數列<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p><strong>『費氏數列』</strong> 是一個每個數等於前兩個數字相加的數列</p>
+<p>費氏數列:0, 1, 1, 2, 3, 5, 8, 13, …</p>
+<div class="admonition- admonition">
+<p class="admonition-title">想法</p>
+<p>簡單的概念就是</p>
+<p>只要前後相加就好</p>
+<p>所以假設 <code class="docutils literal notranslate"><span class="pre">a是第一個數</span></code> 和 <code class="docutils literal notranslate"><span class="pre">b是第二個數</span></code></p>
+<p>那麼每次就是</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">要變成</span> <span class="pre">a</span> <span class="pre">+</span> <span class="pre">b</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">要變成</span> <span class="pre">b</span></code></p></li>
+</ol>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>要注意先後順序</p>
+</div>
+</div>
+</div>
+<div class="section" id="id8">
+<h3>終極密碼<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>終極密碼是一個讓對方猜數字，然後我們會把範圍縮小讓他繼續猜的遊戲</p>
+<p>我們要自己設定三個東西</p>
+<ol class="simple">
+<li><p>最低</p></li>
+<li><p>最高</p></li>
+<li><p>答案</p></li>
+</ol>
+<p>這裡可以用 random 幫我們設定好答案</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>python 裡 有內建的 函式庫 random</p>
+<p>所以我們要拿來用 就使用 import</p>
+<p><em>後面我們再詳細講 import</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+
+<span class="c1"># 使用 random 中的 function randint(a, b)</span>
+<span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># ranint 會從傳入的兩個整數中(a, b) 隨機取一個</span>
+<span class="c1"># 必要條件 ： b &gt; a</span>
+
+</pre></div>
+</div>
+</div>
+<p>接下來是 使用者輸入 我們使用 input</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>python 中 input 會進入互動模式 並等待使用者輸入任意值</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>傳入的值，都會被視為 <code class="docutils literal notranslate"><span class="pre">字串</span></code></p>
+</div>
+</div>
+<p>之後就單純判斷 要更新<strong>最大值</strong> 還是<strong>最小值</strong>了</p>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>解答<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h3>費氏數列 解答<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="dropdown admonition">
+<p class="admonition-title">解答!</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="c1"># 第一個記憶區: 前兩個數 </span>
+<span class="n">lasttwo</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># 第二個記憶區: 前一個數 </span>
+<span class="n">lastone</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">times</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">times</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<span class="c1"># 前兩項直接更新就好 </span>
+    <span class="k">if</span> <span class="n">times</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+     
+        <span class="n">lasttwo</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">times</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">lastone</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="c1"># 前兩項以後就是把記憶區的東西拿出來 + # 並且更新記憶區</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="n">lasttwo</span> <span class="o">+</span> <span class="n">lastone</span>
+        <span class="n">lasttwo</span> <span class="o">=</span> <span class="n">lastone</span>
+        <span class="n">lastone</span> <span class="o">=</span> <span class="n">ans</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;第&quot;</span><span class="p">,</span> <span class="n">times</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;項:&quot;</span><span class="p">,</span> <span class="n">ans</span><span class="p">)</span> 
+    <span class="n">times</span> <span class="o">=</span> <span class="n">times</span> <span class="o">+</span> <span class="mi">1</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>終極密碼解答<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="dropdown admonition">
+<p class="admonition-title">解答!</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="kn">import</span> <span class="nn">random</span> 
+
+<span class="n">low</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">high</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">ans</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span> <span class="c1"># 額外記憶區: 記錄猜幾次</span>
+<span class="n">times</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="c1"># 還記得字串不能跟數字做運算吧? 所以要先把 low, hight 轉成文字再串連 </span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;請輸入 [&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">low</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;-&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">high</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;]&quot;</span>
+    <span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+    <span class="c1"># 次數 + 1</span>
+    <span class="n">times</span> <span class="o">=</span> <span class="n">times</span> <span class="o">+</span> <span class="mi">1</span> 
+    <span class="k">if</span> <span class="n">guess</span> <span class="o">==</span> <span class="n">ans</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;恭喜! 猜對了!&quot;</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="k">elif</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">ans</span><span class="p">:</span>
+    <span class="c1"># 猜的比答案小, 更新 low</span>
+        <span class="n">low</span> <span class="o">=</span> <span class="n">guess</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;狠狠Ｄ 猜錯的次數&quot;</span><span class="p">,</span> <span class="n">times</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+    <span class="c1"># 猜的比答案大, 更新 high</span>
+        <span class="n">high</span> <span class="o">=</span> <span class="n">guess</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;狠狠Ｄ 猜錯的次數&quot;</span><span class="p">,</span> <span class="n">times</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="try-catch">
+<h2>除錯 try catch<a class="headerlink" href="#try-catch" title="Permalink to this headline">¶</a></h2>
+<p>各位應該會注意到</p>
+<p>在 python 中 錯了就是直接告訴你錯在哪裡 e.g.</p>
+<ol class="simple">
+<li><p>ZeroDivisionError  –&gt;  除以 0 的地方</p></li>
+<li><p>ValueError  –&gt;  e.g. 字串無法轉換成 int 時</p></li>
+</ol>
+<p>在剛才的終極密碼中，會發現若我隨意輸入一個 <code class="docutils literal notranslate"><span class="pre">「</span> <span class="pre">A</span> <span class="pre">」</span></code></p>
+<p>會導致 valueError 而結束程式</p>
+<p>要避免這種情況，可以用 try catch 來包住 input 的部分</p>
+<ul class="simple">
+<li><p>try catch 來防止輸入非數字</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="c1"># ↓↓↓</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+    <span class="k">break</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;不是耶！好好輸入數字！&#39;</span><span class="p">)</span>
+        
+</pre></div>
+</div>
+<p>這次純粹防止使用者輸入問題</p>
+<p>正常自己開發程式時也有必須使用 <code class="docutils literal notranslate"><span class="pre">try</span> <span class="pre">catch</span></code> 的地方 e.g.</p>
+<ol class="simple">
+<li><p>讀檔案 <em>（後面詳細講）</em></p></li>
+<li><p>讀 DB 時 處理 Connection Error</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./PartI"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="Basic.html" title="previous page">Python 的安裝</a>
+    <a class='right-next' id="next-link" href="Basic3.html" title="next page">Python 的基礎 - 檔案操作</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By PS-VincentHsu<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

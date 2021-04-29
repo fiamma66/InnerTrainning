@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Lab 2 &#8212; NetPro Python Inner Training</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="第二部分 ： Python 的 實際應用 小程式" href="../PartII/PART2.html" />
+    <link rel="prev" title="Python Lab 1" href="Basic5.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">NetPro Python Inner Training</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Netpro Python PS 內訓
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  PART1
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="PART1.html">
+   第一部分 ： Python 的 基礎
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic.html">
+     Python 的安裝
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic2.html">
+     Python 的基礎 - 語法
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic3.html">
+     Python 的基礎 - 檔案操作
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic4.html">
+     Python 的基礎 - Package 的使用與安裝 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic4-5.html">
+     Python 的基礎 - Package 的使用與安裝 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic5.html">
+     Python Lab 1
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Python Lab 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  PART2
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PartII/PART2.html">
+   第二部分 ： Python 的 實際應用 小程式
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/PartI/Basic6.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/PartI/Basic6.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fiamma66/InnerTrainning"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/fiamma66/InnerTrainning/master?urlpath=tree/PartI/Basic6.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lab-2">
+   Lab 2
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     參考解答
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lab-2-5">
+   Lab 2.5
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     參考解答
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python-lab-2">
+<h1>Python Lab 2<a class="headerlink" href="#python-lab-2" title="Permalink to this headline">¶</a></h1>
+<p>現在我們要來匯出所有 Trinity Job 用到的 SQL</p>
+<div class="admonition-sql admonition">
+<p class="admonition-title">SQL 在哪裡 ， 一定難不倒你 ！</p>
+<p>目前 Trinity Job 有可能有寫 SQL 的 元件 / Job 大概如下</p>
+<ol class="simple">
+<li><p>External Command (Embedded_Script)</p></li>
+<li><p>Reader Plugin</p></li>
+<li><p>SQLExecutor Plugin</p></li>
+</ol>
+</div>
+<p>會發現如果只用 SQL 來盤點 (unnest(XPATH_XML))</p>
+<p>必須分成 3 次 來做 ， 或重複 JOIN SUBQUERY</p>
+<p>我們現在要一次全部到位</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">unnest</span> <span class="pre">會捨棄空集合</span> <span class="pre">{}</span> <span class="pre">，</span> <span class="pre">所以當指定的</span> <span class="pre">XPATH</span> <span class="pre">不存在時</span> <span class="pre">，</span> <span class="pre">unnest</span> <span class="pre">將不會return</span> <span class="pre">row</span></code></p>
+<p>以下兩個 SQL Return Rows 數量將不同</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">select</span> <span class="k">DISTINCT</span> <span class="n">js</span><span class="p">.</span><span class="n">stepname</span><span class="p">,</span> <span class="n">dm</span><span class="p">.</span><span class="n">xmldata</span>
+<span class="p">,</span> <span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//prop[@name=&quot;SQL_SELECT_STATEMENT&quot;]/@value&#39;</span><span class="p">,</span> <span class="n">dm</span><span class="p">.</span><span class="n">xmldata</span><span class="p">::</span><span class="n">xml</span><span class="p">)::</span><span class="nb">text</span> <span class="k">as</span> <span class="n">READER_SQL</span>
+<span class="k">from</span> <span class="n">job</span> <span class="n">j</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobstep</span> <span class="n">js</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">jobuid</span> <span class="o">=</span> <span class="n">js</span><span class="p">.</span><span class="n">jobuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobstepdm</span> <span class="n">dm</span> <span class="k">on</span> <span class="n">js</span><span class="p">.</span><span class="n">stepuid</span> <span class="o">=</span> <span class="n">dm</span><span class="p">.</span><span class="n">stepuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobcategory</span> <span class="n">j2</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">j2</span><span class="p">.</span><span class="n">categoryuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">busentitycategory</span> <span class="n">b</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">categoryuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">busentity</span> <span class="n">b2</span> <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">busentityuid</span> <span class="o">=</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityuid</span>
+<span class="k">where</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityname</span> <span class="o">=</span> <span class="s1">&#39;FET_P&#39;</span>
+  <span class="k">and</span> <span class="n">j</span><span class="p">.</span><span class="n">jobname</span> <span class="o">=</span> <span class="s1">&#39;STORE_PROFILE&#39;</span>
+  <span class="k">and</span> <span class="n">j2</span><span class="p">.</span><span class="n">categoryname</span> <span class="o">=</span> <span class="s1">&#39;MART_STORE&#39;</span>
+</pre></div>
+</div>
+<p>上面 SQL 有 12 筆 （ 12 個 STEP ）</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">select</span> <span class="k">DISTINCT</span> <span class="n">js</span><span class="p">.</span><span class="n">stepname</span><span class="p">,</span> <span class="n">dm</span><span class="p">.</span><span class="n">xmldata</span>
+<span class="p">,</span> <span class="k">unnest</span><span class="p">(</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//prop[@name=&quot;SQL_SELECT_STATEMENT&quot;]/@value&#39;</span><span class="p">,</span> <span class="n">dm</span><span class="p">.</span><span class="n">xmldata</span><span class="p">::</span><span class="n">xml</span><span class="p">))::</span><span class="nb">text</span> <span class="k">as</span> <span class="n">READER_SQL</span>
+<span class="k">from</span> <span class="n">job</span> <span class="n">j</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobstep</span> <span class="n">js</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">jobuid</span> <span class="o">=</span> <span class="n">js</span><span class="p">.</span><span class="n">jobuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobstepdm</span> <span class="n">dm</span> <span class="k">on</span> <span class="n">js</span><span class="p">.</span><span class="n">stepuid</span> <span class="o">=</span> <span class="n">dm</span><span class="p">.</span><span class="n">stepuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobcategory</span> <span class="n">j2</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">j2</span><span class="p">.</span><span class="n">categoryuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">busentitycategory</span> <span class="n">b</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">categoryuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">busentity</span> <span class="n">b2</span> <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">busentityuid</span> <span class="o">=</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityuid</span>
+<span class="k">where</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityname</span> <span class="o">=</span> <span class="s1">&#39;FET_P&#39;</span>
+  <span class="k">and</span> <span class="n">j</span><span class="p">.</span><span class="n">jobname</span> <span class="o">=</span> <span class="s1">&#39;STORE_PROFILE&#39;</span>
+  <span class="k">and</span> <span class="n">j2</span><span class="p">.</span><span class="n">categoryname</span> <span class="o">=</span> <span class="s1">&#39;MART_STORE&#39;</span>
+</pre></div>
+</div>
+<p>Unnest 後 ， 會只剩下 6 筆 （ 有 Reader 的 STEP ）</p>
+</div>
+<div class="section" id="lab-2">
+<h2>Lab 2<a class="headerlink" href="#lab-2" title="Permalink to this headline">¶</a></h2>
+<p>來解決上面的問題吧</p>
+<p>首先 ， 我們改用 Python 來幫我們解析 XML</p>
+<p>這邊我會推薦使用 <code class="docutils literal notranslate"><span class="pre">lxml</span></code> ， 使用上比較直觀</p>
+<p>一樣先安裝</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">lxml</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import lxml&#39;</span>
+</pre></div>
+</div>
+<p>接著執行 SQL</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">select</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityname</span><span class="p">,</span> <span class="n">j4</span><span class="p">.</span><span class="n">categoryname</span><span class="p">,</span> <span class="n">j</span><span class="p">.</span><span class="n">jobname</span>
+<span class="p">,</span> <span class="n">j2</span><span class="p">.</span><span class="n">stepname</span><span class="p">,</span> <span class="n">j2</span><span class="p">.</span><span class="n">xmldata</span> <span class="k">as</span> <span class="n">STEP_XML</span>
+<span class="p">,</span> <span class="n">j3</span><span class="p">.</span><span class="n">xmldata</span> <span class="k">as</span> <span class="n">DM_XML</span>
+<span class="k">from</span> <span class="n">job</span> <span class="n">j</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobstep</span> <span class="n">j2</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">jobuid</span> <span class="o">=</span> <span class="n">j2</span><span class="p">.</span><span class="n">jobuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobstepdm</span> <span class="n">j3</span> <span class="k">on</span> <span class="n">j2</span><span class="p">.</span><span class="n">stepuid</span> <span class="o">=</span> <span class="n">j3</span><span class="p">.</span><span class="n">stepuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobcategory</span> <span class="n">j4</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">j4</span><span class="p">.</span><span class="n">categoryuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">busentitycategory</span> <span class="n">b</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">categoryuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">busentity</span> <span class="n">b2</span> <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">busentityuid</span> <span class="o">=</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityuid</span>
+<span class="k">where</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityname</span> <span class="o">=</span> <span class="s1">&#39;Z_ODS_BK&#39;</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span>
+</pre></div>
+</div>
+<p>剩下的 ， 就是解析 XML &amp; 輸出檔案了</p>
+<div class="admonition- admonition">
+<p class="admonition-title">關於檔案的命名</p>
+<p>通常我們希望用不會被用來命名 Job 、 Busentity 的字元來做分隔符號</p>
+<p>e.g. &#64;&#64; 、 || 、 %% 等</p>
+<p>這邊我們這樣命名</p>
+<p><code class="docutils literal notranslate"><span class="pre">BUSENTITY</span></code>&#64;&#64;<code class="docutils literal notranslate"><span class="pre">CATEGORY</span></code>&#64;&#64;<code class="docutils literal notranslate"><span class="pre">JOB</span></code>&#64;&#64;<code class="docutils literal notranslate"><span class="pre">STEP</span></code>&#64;&#64;<code class="docutils literal notranslate"><span class="pre">SQL_TYPE</span></code>&#64;&#64;<code class="docutils literal notranslate"><span class="pre">SEQ</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">SQL_TYPE</span></code> 分為 <code class="docutils literal notranslate"><span class="pre">S</span></code>(Embedded_Script) 、 <code class="docutils literal notranslate"><span class="pre">E</span></code>(Executor) 、 <code class="docutils literal notranslate"><span class="pre">R</span></code>(Reader)</p>
+<p><code class="docutils literal notranslate"><span class="pre">SEQ</span></code> 則確保一個 STEP 有多個 Reader + Executor</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">lxml的簡單使用</p>
+<p>原始XML資料均以 <code class="docutils literal notranslate"><span class="pre">TEXT</span></code> 來處理</p>
+<p>故要先轉換成 xml object</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
+
+<span class="n">xml_object</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">XML</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>之後一樣用 XPATH 來找關鍵節點</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">S</span></code> : <code class="docutils literal notranslate"><span class="pre">//prop[&#64;name=&quot;scriptsql&quot;]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">E</span></code> : <code class="docutils literal notranslate"><span class="pre">//prop[&#64;name=&quot;SQL_STATEMENT&quot;]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">R</span></code> : <code class="docutils literal notranslate"><span class="pre">//prop[&#64;name=&quot;SQL_SELECT_STATEMENT&quot;]</span></code></p></li>
+</ol>
+<p>XPATH 將會 Return Element List</p>
+<p>再將每個 Element 中的 Value 取出</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">xml_list</span> <span class="o">=</span> <span class="n">xml_object</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//prop[@name=&quot;SQL_STATEMENT&quot;]&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">xml_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h3>參考解答<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="dropdown admonition">
+<p class="admonition-title">請參考</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
+<span class="kn">import</span> <span class="nn">psycopg2</span>
+
+
+<span class="n">default_output_dir</span> <span class="o">=</span> <span class="s1">&#39;file/SQL/&#39;</span>
+
+<span class="n">sql</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">select b2.busentityname, j4.categoryname, j.jobname</span>
+<span class="s1">, j2.stepname, j2.xmldata as STEP_XML</span>
+<span class="s1">, j3.xmldata as DM_XML</span>
+<span class="s1">from job j</span>
+<span class="s1">left join jobstep j2 on j.jobuid = j2.jobuid</span>
+<span class="s1">left join jobstepdm j3 on j2.stepuid = j3.stepuid</span>
+<span class="s1">left join jobcategory j4 on j.categoryuid = j4.categoryuid</span>
+<span class="s1">left join busentitycategory b on j.categoryuid = b.categoryuid</span>
+<span class="s1">left join busentity b2 on b.busentityuid = b2.busentityuid</span>
+<span class="s1">where b2.busentityname = &#39;Z_ODS_BK&#39;</span>
+<span class="s1">ORDER BY 1,2,3,4</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="k">def</span> <span class="nf">extract_sql</span><span class="p">(</span><span class="n">stepxml</span><span class="p">,</span> <span class="n">xml</span><span class="p">):</span> 
+    <span class="c1"># Return sql list</span>
+    <span class="n">sql_list</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">if</span> <span class="n">xml</span><span class="p">:</span>
+        <span class="n">_xml</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">xml</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">_xml</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;root&#39;</span><span class="p">)</span>  <span class="c1"># 空資料</span>
+    
+    <span class="k">if</span> <span class="n">stepxml</span><span class="p">:</span>
+        <span class="n">_stepxml</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">stepxml</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">_stepxml</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;root&#39;</span><span class="p">)</span>  <span class="c1"># 空資料</span>
+    
+    <span class="c1"># Find XPATH</span>
+    <span class="n">scriptsql</span> <span class="o">=</span> <span class="n">_stepxml</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//prop[@name=&quot;scriptsql&quot;]&#39;</span><span class="p">)</span>
+    <span class="n">sql_path</span> <span class="o">=</span> <span class="n">_xml</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//prop[@name=&quot;SQL_STATEMENT&quot;]&#39;</span><span class="p">)</span>
+    <span class="n">reader_path</span> <span class="o">=</span> <span class="n">_xml</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//prop[@name=&quot;SQL_SELECT_STATEMENT&quot;]&#39;</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">sql_path</span><span class="p">:</span>    
+        <span class="k">for</span> <span class="n">sql</span> <span class="ow">in</span> <span class="n">sql_path</span><span class="p">:</span>
+            <span class="n">sql_list</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="n">sql</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)))</span>
+            
+    <span class="k">if</span> <span class="n">reader_path</span><span class="p">:</span> 
+        <span class="k">for</span> <span class="n">sql</span> <span class="ow">in</span> <span class="n">reader_path</span><span class="p">:</span>  
+            <span class="n">sql_list</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">&#39;R&#39;</span><span class="p">,</span> <span class="n">sql</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)))</span>  
+            
+    <span class="k">if</span> <span class="n">scriptsql</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">sql</span> <span class="ow">in</span> <span class="n">scriptsql</span><span class="p">:</span>
+            <span class="n">sql_list</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="n">sql</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)))</span>
+            
+    <span class="k">return</span> <span class="n">sql_list</span>
+
+<span class="n">connection</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;10.140.0.2&#39;</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">,</span> <span class="n">dbname</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">)</span>
+<span class="n">cur</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">count</span><span class="p">,</span> <span class="n">rs</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cur</span><span class="p">):</span>
+    
+    <span class="k">if</span> <span class="n">count</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="c1">#         print(&#39;Rows Processed : {}&#39;.format(count))</span>
+<span class="c1">#         print(rs)</span>
+        <span class="k">pass</span>
+        
+    <span class="n">f_name</span> <span class="o">=</span> <span class="s1">&#39;@@&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rs</span><span class="p">[:</span><span class="mi">4</span><span class="p">])</span>
+    
+    <span class="n">sql_l</span> <span class="o">=</span> <span class="n">extract_sql</span><span class="p">(</span><span class="n">rs</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">rs</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sql_l</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="c1"># Tuple 1 -&gt; Mode  2 -&gt; SQL</span>
+        <span class="n">mode</span> <span class="o">=</span> <span class="n">sql_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">_f_name</span> <span class="o">=</span> <span class="n">default_output_dir</span> <span class="o">+</span> <span class="n">f_name</span> <span class="o">+</span> <span class="s1">&#39;@@</span><span class="si">{}</span><span class="s1">@@0.txt&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">_f_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">sql_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+                
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">_s</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sql_l</span><span class="p">):</span>
+            <span class="n">mode</span> <span class="o">=</span> <span class="n">_s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">_f_name</span> <span class="o">=</span> <span class="n">default_output_dir</span> <span class="o">+</span> <span class="n">f_name</span> <span class="o">+</span> <span class="s1">&#39;@@</span><span class="si">{}</span><span class="s1">@@</span><span class="si">{}</span><span class="s1">.txt&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">_f_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">_s</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+
+
+<span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="lab-2-5">
+<h2>Lab 2.5<a class="headerlink" href="#lab-2-5" title="Permalink to this headline">¶</a></h2>
+<p>小小的延伸</p>
+<p>前面我們透過 <code class="docutils literal notranslate"><span class="pre">lxml</span></code> 來解析 XML中的 SQL Script</p>
+<p>可以解析 、 取出節點的資料 ， 那肯定可以 <code class="docutils literal notranslate"><span class="pre">更新</span></code> 節點的資料</p>
+<p>接下來的我就不執行 Code 了 ， 我們來更新 <code class="docutils literal notranslate"><span class="pre">SQLExecutor</span> <span class="pre">Script</span></code> 後</p>
+<p><code class="docutils literal notranslate"><span class="pre">UPDATE</span></code> / <code class="docutils literal notranslate"><span class="pre">INSERT</span></code> 回去 ， 各位就找一隻 Job 來試試看 UPDATE 回去</p>
+<p>但請小心 / 避免選到同一隻 Job</p>
+<p>或是模仿 Trinity COPY Job</p>
+<p>那下面我就講述 UPDATE 回去的部分 ， COPY Job 只陳述簡單概念 （ 其實就是更換 UUID ）</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>小提醒
+如果可以只用 Trinity JFDesigner 做到的事</p>
+<p>千萬別浪費時間用 Python 寫喔 ～</p>
+<p>e.g. 去創一個自己用的 BusinessEntity / Category / Job</p>
+</div>
+<p>以下用 <code class="docutils literal notranslate"><span class="pre">Z_ODS_BK</span></code> / <code class="docutils literal notranslate"><span class="pre">DATA_EVENT.SERVICE_ORDER</span></code> / <code class="docutils literal notranslate"><span class="pre">SERVICE_ORDER_DTL_COH</span></code> 做範例</p>
+<p>所有 STEP 的所有 SQL ， 請刪除 <code class="docutils literal notranslate"><span class="pre">FOREIGN</span> <span class="pre">TABLE</span></code>  &amp;  <code class="docutils literal notranslate"><span class="pre">TD6750</span></code></p>
+<div class="admonition-sql admonition">
+<p class="admonition-title">參考 SQL</p>
+<p>SELECT 部分</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">select</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityname</span><span class="p">,</span> <span class="n">j4</span><span class="p">.</span><span class="n">categoryname</span><span class="p">,</span> <span class="n">j</span><span class="p">.</span><span class="n">jobname</span>
+<span class="p">,</span> <span class="n">j2</span><span class="p">.</span><span class="n">stepname</span><span class="p">,</span> <span class="n">j2</span><span class="p">.</span><span class="n">xmldata</span> <span class="k">as</span> <span class="n">STEP_XML</span>
+<span class="p">,</span> <span class="n">j3</span><span class="p">.</span><span class="n">xmldata</span> <span class="k">as</span> <span class="n">DM_XML</span>
+<span class="k">from</span> <span class="n">job</span> <span class="n">j</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobstep</span> <span class="n">j2</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">jobuid</span> <span class="o">=</span> <span class="n">j2</span><span class="p">.</span><span class="n">jobuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobstepdm</span> <span class="n">j3</span> <span class="k">on</span> <span class="n">j2</span><span class="p">.</span><span class="n">stepuid</span> <span class="o">=</span> <span class="n">j3</span><span class="p">.</span><span class="n">stepuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobcategory</span> <span class="n">j4</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">j4</span><span class="p">.</span><span class="n">categoryuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">busentitycategory</span> <span class="n">b</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">categoryuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">busentity</span> <span class="n">b2</span> <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">busentityuid</span> <span class="o">=</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityuid</span>
+<span class="k">where</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityname</span> <span class="o">=</span> <span class="s1">&#39;Z_ODS_BK&#39;</span>
+  <span class="k">and</span> <span class="n">j4</span><span class="p">.</span><span class="n">categoryname</span> <span class="o">=</span> <span class="s1">&#39;DATA_EVENT.SERVICE_ORDER&#39;</span>
+  <span class="k">and</span> <span class="n">j</span><span class="p">.</span><span class="n">jobname</span> <span class="o">=</span> <span class="s1">&#39;SERVICE_ORDER_DTL_COH&#39;</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span>
+</pre></div>
+</div>
+<p>UPDATE 部分</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="n">jobstepdm</span>
+<span class="k">set</span> <span class="n">xmldata</span> <span class="o">=</span> 
+<span class="k">where</span> <span class="n">stepuid</span> <span class="k">in</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">dm</span><span class="p">.</span><span class="n">stepuid</span>
+    <span class="k">from</span> <span class="n">jobstepdm</span> <span class="n">dm</span>
+    <span class="k">left</span> <span class="k">join</span> <span class="n">jobstep</span> <span class="n">j</span> <span class="k">on</span> <span class="n">dm</span><span class="p">.</span><span class="n">stepuid</span> <span class="o">=</span> <span class="n">j</span><span class="p">.</span><span class="n">stepuid</span>
+    <span class="k">left</span> <span class="k">join</span> <span class="n">job</span> <span class="n">j2</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">jobuid</span> <span class="o">=</span> <span class="n">j2</span><span class="p">.</span><span class="n">jobuid</span>
+    <span class="k">left</span> <span class="k">join</span> <span class="n">jobcategory</span> <span class="n">j3</span> <span class="k">on</span> <span class="n">j2</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">j3</span><span class="p">.</span><span class="n">categoryuid</span>
+    <span class="k">left</span> <span class="k">join</span> <span class="n">busentitycategory</span> <span class="n">b</span> <span class="k">on</span> <span class="n">j2</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">categoryuid</span>
+    <span class="k">left</span> <span class="k">join</span> <span class="n">busentity</span> <span class="n">b2</span> <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">busentityuid</span> <span class="o">=</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityuid</span>
+    <span class="k">where</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityname</span> <span class="o">=</span> <span class="s1">&#39;Z_ODS_BK&#39;</span>
+    <span class="k">and</span> <span class="n">j3</span><span class="p">.</span><span class="n">categoryname</span> <span class="o">=</span> <span class="s1">&#39;DATA_EVENT.SERVICE_ORDER&#39;</span>
+    <span class="k">and</span> <span class="n">j2</span><span class="p">.</span><span class="n">jobname</span> <span class="o">=</span> <span class="s1">&#39;SERVICE_ORDER_DTL_COH&#39;</span>
+    <span class="k">and</span> <span class="n">j</span><span class="p">.</span><span class="n">stepname</span> <span class="o">=</span> <span class="s1">&#39;STEP0201_TRANSFORM&#39;</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>參考解答<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="dropdown admonition">
+<p class="admonition-title">請參考，這題比較深</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+
+<span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">select b2.busentityname, j4.categoryname, j.jobname</span>
+<span class="s2">, j2.stepname, j2.xmldata as STEP_XML</span>
+<span class="s2">, j3.xmldata as DM_XML</span>
+<span class="s2">from job j</span>
+<span class="s2">left join jobstep j2 on j.jobuid = j2.jobuid</span>
+<span class="s2">left join jobstepdm j3 on j2.stepuid = j3.stepuid</span>
+<span class="s2">left join jobcategory j4 on j.categoryuid = j4.categoryuid</span>
+<span class="s2">left join busentitycategory b on j.categoryuid = b.categoryuid</span>
+<span class="s2">left join busentity b2 on b.busentityuid = b2.busentityuid</span>
+<span class="s2">where b2.busentityname = &#39;Z_ODS_BK&#39;</span>
+<span class="s2">  and j4.categoryname = &#39;DATA_EVENT.SERVICE_ORDER&#39;</span>
+<span class="s2">  and j.jobname = &#39;SERVICE_ORDER_DTL_COH&#39;</span>
+<span class="s2">  and j2.stepname = &#39;STEP0201_TRANSFORM&#39;</span>
+<span class="s2">ORDER BY 1,2,3,4</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">update_sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">UPDATE jobstepdm</span>
+<span class="s2">set xmldata = </span><span class="si">%s</span><span class="s2"></span>
+<span class="s2">where stepuid in (</span>
+<span class="s2">    select dm.stepuid</span>
+<span class="s2">    from jobstepdm dm</span>
+<span class="s2">    left join jobstep j on dm.stepuid = j.stepuid</span>
+<span class="s2">    left join job j2 on j.jobuid = j2.jobuid</span>
+<span class="s2">    left join jobcategory j3 on j2.categoryuid = j3.categoryuid</span>
+<span class="s2">    left join busentitycategory b on j2.categoryuid = b.categoryuid</span>
+<span class="s2">    left join busentity b2 on b.busentityuid = b2.busentityuid</span>
+<span class="s2">    where b2.busentityname = &#39;</span><span class="si">{busentity}</span><span class="s2">&#39;</span>
+<span class="s2">    and j3.categoryname = &#39;</span><span class="si">{category}</span><span class="s2">&#39;</span>
+<span class="s2">    and j2.jobname = &#39;</span><span class="si">{job}</span><span class="s2">&#39;</span>
+<span class="s2">    and j.stepname = &#39;</span><span class="si">{step}</span><span class="s2">&#39;</span>
+<span class="s2">    )</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">xml_comment</span> <span class="o">=</span> <span class="s1">&#39;&lt;!-- Data Management XML Definition, generated by JFDesigner V4.1.0.169 build 20180920 --&gt;</span><span class="se">\n</span><span class="si">{}</span><span class="s1">&#39;</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;10.140.0.2&#39;</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">,</span> <span class="n">dbname</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">)</span>
+<span class="n">cur</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
+
+<span class="n">rs_li</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">rs</span> <span class="ow">in</span> <span class="n">rs_li</span><span class="p">:</span>
+    
+    <span class="n">where_clause</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;busentity&#39;</span><span class="p">:</span> <span class="n">rs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+        <span class="s1">&#39;category&#39;</span><span class="p">:</span> <span class="n">rs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+        <span class="s1">&#39;job&#39;</span><span class="p">:</span> <span class="n">rs</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+        <span class="s1">&#39;step&#39;</span><span class="p">:</span> <span class="n">rs</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">rs</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">_sql</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//prop[@name=&quot;SQL_STATEMENT&quot;]/@value&#39;</span><span class="p">)):</span>
+        <span class="n">_sql</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;FOREIGN TABLE&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">_sql</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">)</span>
+        <span class="n">_sql</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;@TD6750&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">_sql</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">)</span>
+        
+        <span class="c1"># 更新 xml element</span>
+        <span class="n">tree</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//prop[@name=&quot;SQL_STATEMENT&quot;]&#39;</span><span class="p">)[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_sql</span>
+    
+    <span class="n">_update_sql</span> <span class="o">=</span> <span class="n">update_sql</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">**</span><span class="n">where_clause</span><span class="p">)</span>
+    
+    <span class="n">text</span> <span class="o">=</span> <span class="n">xml_comment</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">etree</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s1">&#39;&amp;apos;&#39;</span><span class="p">))</span>
+    
+    <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">_update_sql</span><span class="p">,</span> <span class="p">(</span><span class="n">text</span><span class="p">,))</span>
+
+<span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./PartI"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="Basic5.html" title="previous page">Python Lab 1</a>
+    <a class='right-next' id="next-link" href="../PartII/PART2.html" title="next page">第二部分 ： Python 的 實際應用 小程式</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By PS-VincentHsu<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

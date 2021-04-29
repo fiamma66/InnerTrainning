@@ -1,0 +1,496 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Lab 1 &#8212; NetPro Python Inner Training</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python Lab 2" href="Basic6.html" />
+    <link rel="prev" title="Python 的基礎 - Package 的使用與安裝 2" href="Basic4-5.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">NetPro Python Inner Training</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Netpro Python PS 內訓
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  PART1
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="PART1.html">
+   第一部分 ： Python 的 基礎
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic.html">
+     Python 的安裝
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic2.html">
+     Python 的基礎 - 語法
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic3.html">
+     Python 的基礎 - 檔案操作
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic4.html">
+     Python 的基礎 - Package 的使用與安裝 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic4-5.html">
+     Python 的基礎 - Package 的使用與安裝 2
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Python Lab 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic6.html">
+     Python Lab 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  PART2
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PartII/PART2.html">
+   第二部分 ： Python 的 實際應用 小程式
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/PartI/Basic5.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/PartI/Basic5.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fiamma66/InnerTrainning"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/fiamma66/InnerTrainning/master?urlpath=tree/PartI/Basic5.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lab-1">
+   Lab 1
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Lab 1 參考
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lab-1-5">
+   Lab 1.5
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Lab 1.5 參考
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python-lab-1">
+<h1>Python Lab 1<a class="headerlink" href="#python-lab-1" title="Permalink to this headline">¶</a></h1>
+<p>到這裡為止，就是大致上的Python的基礎運用</p>
+<p>下面我們就以實際例子來做幾個 Lab</p>
+<div class="section" id="lab-1">
+<h2>Lab 1<a class="headerlink" href="#lab-1" title="Permalink to this headline">¶</a></h2>
+<p>在 <code class="docutils literal notranslate"><span class="pre">file</span></code> 下有個 <code class="docutils literal notranslate"><span class="pre">2800_pwd_list.xlsx</span></code></p>
+<p>裡面大概是這樣</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>account</p></th>
+<th class="head"><p>jdbc_string</p></th>
+<th class="head"><p>password</p></th>
+<th class="head"><p>base64_pwd</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>B_ONEMODEL</p></td>
+<td><p>jdbc:teradata://10.68.64.168/TMODE=TERA,CHARSET=ASCII,CLIENT_CHARSET=MS950,LOB_SUPPORT=OFF</p></td>
+<td><p>F3A5806FF36F36D96C1F8E4310F6ECC0</p></td>
+<td><p>Ql9PTkVNT0RFTA==</p></td>
+</tr>
+<tr class="row-odd"><td><p>DAS2CRMODS</p></td>
+<td><p>jdbc:teradata://10.68.64.168/TMODE=TERA,CHARSET=ASCII,CLIENT_CHARSET=MS950,LOB_SUPPORT=OFF</p></td>
+<td><p>4AE5C97BEC9B59C93F073CF64CA8AB47</p></td>
+<td><p>ZGFzMmNybW9kcw==</p></td>
+</tr>
+</tbody>
+</table>
+<p>這個檔案是 Trinity 的 Connection XML 解析出來的欄位</p>
+<p>其中包含</p>
+<ol class="simple">
+<li><p>Account 帳號</p></li>
+<li><p>JDBC String</p></li>
+<li><p>Password (編碼過)</p></li>
+<li><p>Base64_pwd (以 Base64 編碼的密碼)</p></li>
+</ol>
+<p><b><font size=4> <code class="docutils literal notranslate"><span class="pre">請把</span> <span class="pre">Base64_pwd</span> <span class="pre">欄位的所有值解碼回正常的密碼</span></code> </font></b></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Base64 編碼是可以被解碼的</p>
+<p>Python 自帶的 Lib 中，有 Base64編、解碼的 Library</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>使用上請注意 Base64 解碼與編碼， 都必須使用位元 （Byte Object）</p>
+</div>
+</div>
+<div class="section" id="id1">
+<h3>Lab 1 參考<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_hide-cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">base64</span>
+
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;file/2800_pwd_list.xlsx&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;openpyxl&#39;</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;real_pwd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;base64_pwd&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">))</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;file/2800_pwd_list_ANSWER.xlsx&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="lab-1-5">
+<h2>Lab 1.5<a class="headerlink" href="#lab-1-5" title="Permalink to this headline">¶</a></h2>
+<p>你如果想問</p>
+<p>啊 ！ password 這個欄位資料要做什麼用？</p>
+<p><s> 現在要用到了 </s></p>
+<p>你可以在 <code class="docutils literal notranslate"><span class="pre">./bin/</span></code> 下找到 <code class="docutils literal notranslate"><span class="pre">decode.jar</span></code> 這是一個解碼的 JAR 檔</p>
+<p><b><font size=4> <code class="docutils literal notranslate"><span class="pre">現在，請把</span> <span class="pre">password</span> <span class="pre">所有值，當成參數給這個</span> <span class="pre">JAR</span> <span class="pre">來執行，並再輸出一個報表</span></code> </font></b></p>
+<p>我們這邊要透過 Subprocess 來使用 JAR 檔，並透過 Standard Output 來交換資料</p>
+<div class="admonition-subprocess-library admonition">
+<p class="admonition-title">Subprocess Library</p>
+<p>Python 有內建 Subprocess Library</p>
+<p>並且可以重新導向 <code class="docutils literal notranslate"><span class="pre">Standard</span> <span class="pre">Output</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">Standard</span> <span class="pre">Error</span></code></p>
+<p>直接使用（將 External Command 拆成數個 String）</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">subprocess</span>
+
+
+<span class="n">command</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;java&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;-jar&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;./bin/decode.jar&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;F3A5806FF36F36D96C1F8E4310F6ECC0&#39;</span>
+           <span class="p">]</span>
+           
+<span class="n">process</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">command</span> <span class="p">,</span> <span class="n">universal_newlines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">std</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">communicate</span><span class="p">()</span>
+
+<span class="n">std</span>
+
+</pre></div>
+</div>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>你應該有發現，不論是 Base64 Password 和 Password 都有重複值的問題吧！</p>
+<p>因為我們接下來要透過 Subprocess Call Java</p>
+<p>我們應該要先 Distinct Password 來增加效能 ！</p>
+</div>
+<div class="section" id="id2">
+<h3>Lab 1.5 參考<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="dropdown admonition">
+<p class="admonition-title">請參考</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">subprocess</span>
+
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;file/2800_pwd_list.xlsx&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;openpyxl&#39;</span><span class="p">)</span>
+
+<span class="n">pwd_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="n">pwd_dict</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">pwd</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">]:</span>
+    <span class="n">pwd_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">pwd</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">pwd</span> <span class="ow">in</span> <span class="n">pwd_set</span><span class="p">:</span>
+    
+    <span class="n">command</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;java&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;-jar&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;./bin/decode.jar&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pwd</span><span class="p">)</span>
+               <span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;現在解碼 : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pwd</span><span class="p">))</span>
+    
+    <span class="n">process</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">command</span> <span class="p">,</span> <span class="n">universal_newlines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">bufsize</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">std</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">communicate</span><span class="p">()</span>
+    
+    <span class="n">pwd_dict</span><span class="p">[</span><span class="n">pwd</span><span class="p">]</span> <span class="o">=</span> <span class="n">std</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+
+
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;java_pwd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">pwd_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;file/2800_pwd_list_ANSWER.xlsx&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./PartI"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="Basic4-5.html" title="previous page">Python 的基礎 - Package 的使用與安裝 2</a>
+    <a class='right-next' id="next-link" href="Basic6.html" title="next page">Python Lab 2</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By PS-VincentHsu<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

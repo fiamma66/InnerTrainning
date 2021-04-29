@@ -1,0 +1,861 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python 的基礎 - Package 的使用與安裝 2 &#8212; NetPro Python Inner Training</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python Lab 1" href="Basic5.html" />
+    <link rel="prev" title="Python 的基礎 - Package 的使用與安裝 1" href="Basic4.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">NetPro Python Inner Training</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Netpro Python PS 內訓
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  PART1
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="PART1.html">
+   第一部分 ： Python 的 基礎
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic.html">
+     Python 的安裝
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic2.html">
+     Python 的基礎 - 語法
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic3.html">
+     Python 的基礎 - 檔案操作
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic4.html">
+     Python 的基礎 - Package 的使用與安裝 1
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Python 的基礎 - Package 的使用與安裝 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic5.html">
+     Python Lab 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Basic6.html">
+     Python Lab 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  PART2
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../PartII/PART2.html">
+   第二部分 ： Python 的 實際應用 小程式
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/PartI/Basic4-5.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/PartI/Basic4-5.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fiamma66/InnerTrainning"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/fiamma66/InnerTrainning/master?urlpath=tree/PartI/Basic4-5.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   小練習 1
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     小練習 1 參考解答
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pandas">
+   套件 Pandas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     安裝 Pandas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   使用 Pandas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pandas-read-db">
+     Pandas Read DB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pandas-export-csv">
+     Pandas Export CSV
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python-package-2">
+<h1>Python 的基礎 - Package 的使用與安裝 2<a class="headerlink" href="#python-package-2" title="Permalink to this headline">¶</a></h1>
+<p>剛剛我們成功連線到 Trinity Repository 並能夠拉取裡面的資料了</p>
+<p>現在可以搭配剛才的輸出檔案，將想要的資料輸出成報表</p>
+<p>不多說，小練習 GO</p>
+<div class="section" id="id1">
+<h2>小練習 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>請盤點出剛才的 Job 的 Script，並輸出成報表</p>
+<div class="admonition-for-your-information admonition">
+<p class="admonition-title">For Your Information</p>
+<p>剛才的 Job 是在 「 康是美 」 使用的 Tableau Command refreshextracts</p>
+<p>JobStep 全部都是 External Command ， 並且是以 EMBEDDED_SCRIPT 執行</p>
+<p>這邊我們就不解釋怎麼從 stepxml 中 ， 取出 Command ， SQL 如下</p>
+<div class="admonition-sql admonition">
+<p class="admonition-title">SQL</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">select</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityname</span><span class="p">,</span> <span class="n">j2</span><span class="p">.</span><span class="n">categoryname</span><span class="p">,</span> <span class="n">j</span><span class="p">.</span><span class="n">jobname</span><span class="p">,</span> <span class="n">js</span><span class="p">.</span><span class="n">stepname</span>
+     <span class="p">,</span> <span class="k">unnest</span><span class="p">(</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//prop[@name=&quot;command&quot;]/@value&#39;</span><span class="p">,</span> <span class="n">js</span><span class="p">.</span><span class="n">xmldata</span><span class="p">::</span><span class="n">xml</span><span class="p">))::</span><span class="nb">text</span> <span class="k">as</span> <span class="n">COMMAND</span>
+     <span class="p">,</span> <span class="k">unnest</span><span class="p">(</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//prop[@name=&quot;scriptsql&quot;]/@value&#39;</span><span class="p">,</span> <span class="n">js</span><span class="p">.</span><span class="n">xmldata</span><span class="p">::</span><span class="n">xml</span><span class="p">))::</span><span class="nb">text</span> <span class="k">as</span> <span class="n">EMBEDDED_SCRIPT</span>
+<span class="k">from</span> <span class="n">job</span> <span class="n">j</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobstep</span> <span class="n">js</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">jobuid</span> <span class="o">=</span> <span class="n">js</span><span class="p">.</span><span class="n">jobuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">jobcategory</span> <span class="n">j2</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">j2</span><span class="p">.</span><span class="n">categoryuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">busentitycategory</span> <span class="n">b</span> <span class="k">on</span> <span class="n">j</span><span class="p">.</span><span class="n">categoryuid</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">categoryuid</span>
+<span class="k">left</span> <span class="k">join</span> <span class="n">busentity</span> <span class="n">b2</span> <span class="k">on</span> <span class="n">b</span><span class="p">.</span><span class="n">busentityuid</span> <span class="o">=</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityuid</span>
+<span class="k">where</span> <span class="n">j</span><span class="p">.</span><span class="n">activate</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span>
+  <span class="k">and</span> <span class="n">b2</span><span class="p">.</span><span class="n">busentityname</span> <span class="o">=</span> <span class="s1">&#39;Z_COSMED&#39;</span>
+  <span class="k">and</span> <span class="n">j2</span><span class="p">.</span><span class="n">categoryname</span> <span class="o">=</span> <span class="s1">&#39;EXT&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>小練習 1 參考解答<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_hide-cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+
+<span class="c1"># 連線 94 這麼簡單</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;10.140.0.2&#39;</span><span class="p">,</span> <span class="n">dbname</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">)</span>
+
+<span class="c1"># Create Cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># 三個單引號 --&gt; String </span>
+<span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">select b2.busentityname, j2.categoryname, j.jobname, js.stepname</span>
+<span class="s2">     , unnest(xpath(&#39;//prop[@name=&quot;command&quot;]/@value&#39;, js.xmldata::xml))::text as COMMAND</span>
+<span class="s2">     , unnest(xpath(&#39;//prop[@name=&quot;scriptsql&quot;]/@value&#39;, js.xmldata::xml))::text as EMBEDDED_SCRIPT</span>
+<span class="s2">from job j</span>
+<span class="s2">left join jobstep js on j.jobuid = js.jobuid</span>
+<span class="s2">left join jobcategory j2 on j.categoryuid = j2.categoryuid</span>
+<span class="s2">left join busentitycategory b on j.categoryuid = b.categoryuid</span>
+<span class="s2">left join busentity b2 on b.busentityuid = b2.busentityuid</span>
+<span class="s2">where j.activate = &#39;1&#39;</span>
+<span class="s2">  and b2.busentityname = &#39;Z_COSMED&#39;</span>
+<span class="s2">  and j2.categoryname = &#39;EXT&#39;</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="c1"># 執行 SQL</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file/report.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
+
+<span class="c1"># Set Columns</span>
+<span class="n">column</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;busentityname&#39;</span><span class="p">,</span><span class="s1">&#39;categoryname&#39;</span><span class="p">,</span><span class="s1">&#39;jobname&#39;</span><span class="p">,</span><span class="s1">&#39;stepname&#39;</span><span class="p">,</span><span class="s1">&#39;command&#39;</span><span class="p">,</span><span class="s1">&#39;embedded_script&#39;</span><span class="p">,)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">column</span><span class="p">))</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="c1"># cursor object is iterable</span>
+<span class="k">for</span> <span class="n">rs</span> <span class="ow">in</span> <span class="n">cursor</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rs</span><span class="p">))</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>輸出成報表後</p>
+<p>用 Excel 給他打開下去吧！</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>這次輸出的報表中沒有中文</p>
+<p>可以放心直接用 excel 打開</p>
+</div>
+</div>
+</div>
+<div class="section" id="pandas">
+<h2>套件 Pandas<a class="headerlink" href="#pandas" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>如果你用 <code class="docutils literal notranslate"><span class="pre">Notepad++</span></code> 之類的編輯器打開剛才的報表檔案 CSV</p>
+<p>會發現 Excel 中 Embedded_script 裡 <code class="docutils literal notranslate"><span class="pre">&quot;${TABLEAU_PATH}&quot;</span></code> 的雙引號不見了</p>
+<p>這是因為我們沒有特別去處理 <b> <code class="docutils literal notranslate"><span class="pre">雙引號</span></code> </b> 的問題</p>
+<p>CSV 標準格式中有如下的定義</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>僅節錄部分</p>
+<p><b><font size=4> RFC 4180 standard </font></b></p>
+<ul class="simple">
+<li><p>Any field may be quoted (with double quotes).</p></li>
+<li><p>Fields containing a line-break, double-quote or commas should be quoted. (If they are not, the file will likely be impossible to process correctly.)</p></li>
+<li><p>If double-quotes are used to enclose fields, then a double-quote in a field must be represented by two double-quote characters.</p></li>
+</ul>
+</div>
+<p>上述標準簡單來說</p>
+<ul class="simple">
+<li><p>一個欄位的值，若包含 <b><font size=2> <code class="docutils literal notranslate"><span class="pre">換行</span> <span class="pre">、</span>&#160; <span class="pre">雙引號</span> <span class="pre">、</span> <span class="pre">逗號</span></code> </font></b> 的話，必須以<b><font size=2> <code class="docutils literal notranslate"><span class="pre">雙引號</span></code> </font></b>來包覆</p></li>
+<li><p>如果要使用包含<b><font size=2> <code class="docutils literal notranslate"><span class="pre">雙引號</span></code> </font></b>的欄位值，則必須以兩個<b><font size=2> <code class="docutils literal notranslate"><span class="pre">雙引號</span></code> </font></b>表示</p></li>
+</ul>
+<p>那我們勢必在寫檔時，要去替換有雙引號的地方</p>
+<p>很麻煩吧 ！</p>
+<p><b><font size=4> 沒事 ！ </font></b> 這邊有好用的套件 <b><font size=3> <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> </font></b> 幫我們處理</p>
+<div class="section" id="id3">
+<h3>安裝 Pandas<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>一樣使用 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 來安裝</p>
+<p>如果你在安裝 Python 時選用 <code class="docutils literal notranslate"><span class="pre">Anaconda</span></code> 的安裝包的話，不必再裝，<code class="docutils literal notranslate"><span class="pre">Anaconda</span></code> 有自帶</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">pandas</span>
+</pre></div>
+</div>
+<p>測試是否安裝成功</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import pandas as pd&#39;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>前面我們 import 套件後</p>
+<p>都是這樣用</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+
+
+<span class="n">psycopg2</span><span class="o">.</span><span class="n">FUNCTION_NAME</span>
+</pre></div>
+</div>
+<p>這邊我自己的習慣會簡化 <code class="docutils literal notranslate"><span class="pre">pandas</span></code> 的名子</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+
+<span class="n">pd</span><span class="o">.</span><span class="n">FUNCTION_NAME</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>使用 Pandas<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Pandas 是一個高效能且強力的資料分析套件</p>
+<p>它提供了 DataFrame 的資料型態 ， 非常像 Excel 的資料表</p>
+<p>而且可以讀取 Excel(<code class="docutils literal notranslate"><span class="pre">.xlsx</span> <span class="pre">.xls</span></code>) 、 CSV(<code class="docutils literal notranslate"><span class="pre">.csv</span></code>) 還可以直接讀取 DB Table</p>
+<p>這邊我們來直接讀 DB Table ， 並且輸出成 CSV</p>
+<div class="section" id="pandas-read-db">
+<h3>Pandas Read DB<a class="headerlink" href="#pandas-read-db" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">pandas</span></code>.<b><font size=3><code class="docutils literal notranslate"><span class="pre">read_sql</span></code></font></b>(sql, con, index_col=None, coerce_float=True, params=None, parse_dates=None, columns=None, chunksize=None)</p>
+<p>重要的大概是前兩個 <code class="docutils literal notranslate"><span class="pre">sql</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">con</span></code></p>
+<p>其他的詳細請看 <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.read_sql.html">Doc</a></p>
+<ul class="simple">
+<li><p><b><font size=3><code class="docutils literal notranslate"><span class="pre">sql</span></code></font></b></p></li>
+</ul>
+<p>可以直接用 String 的方式傳入 SQL Statement</p>
+<ul class="simple">
+<li><p><b><font size=3><code class="docutils literal notranslate"><span class="pre">con</span></code></font></b></p></li>
+</ul>
+<p>這個稍微特殊一點</p>
+<p>目前還可以使用 DBAPI2 Object</p>
+<p>也就是 <code class="docutils literal notranslate"><span class="pre">psycopg2</span></code> 的 Connection Object 可以使用</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pandas 文件中寫道：</p>
+<p><b>con : SQLAlchemy connectable, str, or sqlite3 connection</b></p>
+<p>Using SQLAlchemy makes it possible to use any DB supported by that library. <b>If a DBAPI2 object, only sqlite3 is supported. </b> The user is responsible for engine disposal and connection closure for the SQLAlchemy connectable.</p>
+<p>目前還可以用，但未來不確定是否能繼續用 <code class="docutils literal notranslate"><span class="pre">psycopg2</span></code> 的 Connection</p>
+<p>文件中建議使用 <code class="docutils literal notranslate"><span class="pre">SQLAlchemy</span></code> Library</p>
+<p><a class="reference external" href="https://docs.sqlalchemy.org/en/14/dialects/postgresql.html#module-sqlalchemy.dialects.postgresql.psycopg2">只稍微看一下</a></p>
+</div>
+<div class="cell tag_hide-output tag_show-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql</span><span class="o">=</span><span class="n">sql</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">connection</span><span class="p">)</span>
+
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>busentityname</th>
+      <th>categoryname</th>
+      <th>jobname</th>
+      <th>stepname</th>
+      <th>command</th>
+      <th>embedded_script</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_FINTARGETTEAM</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_STOCKSALES_DATETYPE</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_STOREHOURSALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_TAXREFUND</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_TANAITEMSALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_TANADETAILSALES_MON</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_TANADETAILSALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_STORESALESTARGET_MONTH</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_STORESALESTARGET</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_STOREITEMSALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_KEYITEMEVENTDETAIL</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_STOREGROUPSALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_STOREDAY</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_STOCKSTOREITEM_MON</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_STOCKSALES_14D</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_STOCKITEMSALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_PROMOITEMSALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_PAYMENTSALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_PAYMENTPROMOSALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_KEYITEMEVENTTARGET</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_DEPTSALESTARGET</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_ITEMSALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_INVOICESALES</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_INVOICEDETAILSALES_TODAY</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_INVOICEDETAILSALES_FAST</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_INCOMESTATEMENT_A</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_INCOMESTATEMENT</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Z_COSMED</td>
+      <td>EXT</td>
+      <td>EXT_GROUPSALESTARGET</td>
+      <td>EXTRACT</td>
+      <td>${EMBEDDED_SCRIPT}</td>
+      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="pandas-export-csv">
+<h3>Pandas Export CSV<a class="headerlink" href="#pandas-export-csv" title="Permalink to this headline">¶</a></h3>
+<p>最後，讓 Pandas 幫我們輸出 CSV</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;file/report_pandas.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>這邊的 <code class="docutils literal notranslate"><span class="pre">index</span></code> 參數，是指是否要輸出在 <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> 中使用的 <code class="docutils literal notranslate"><span class="pre">index</span></code></p>
+<p>通常我都不輸出，畢竟那個 <code class="docutils literal notranslate"><span class="pre">index</span></code> 只有 <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> 看得懂</p>
+</div>
+<p>可以比較看看 <code class="docutils literal notranslate"><span class="pre">report.csv</span></code> 與 <code class="docutils literal notranslate"><span class="pre">report_pandas.csv</span></code> 的差別</p>
+<p>可以發現 <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> 幫我們完成了雙引號的處理</p>
+<p>一個欄位值用雙引號包覆</p>
+<p>使用到雙引號的話，就用兩個雙引號表示</p>
+<p><img alt="img" src="../_images/pandascsv.png" /></p>
+<p>再用 Excel 打開看看， 應該會正確處理雙引號了</p>
+<p><img alt="img" src="../_images/excelcsv.png" /></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./PartI"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="Basic4.html" title="previous page">Python 的基礎 - Package 的使用與安裝 1</a>
+    <a class='right-next' id="next-link" href="Basic5.html" title="next page">Python Lab 1</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By PS-VincentHsu<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
