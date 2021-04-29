@@ -300,7 +300,7 @@
 <p>下面我們就以實際例子來做幾個 Lab</p>
 <div class="section" id="lab-1">
 <h2>Lab 1<a class="headerlink" href="#lab-1" title="Permalink to this headline">¶</a></h2>
-<p>在 <code class="docutils literal notranslate"><span class="pre">file</span></code> 下有個 <code class="docutils literal notranslate"><span class="pre">2800_pwd_list.xlsx</span></code></p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">file</span></code> 下有個 <code class="docutils literal notranslate"><span class="pre">pwd_list.xlsx</span></code></p>
 <p>裡面大概是這樣</p>
 <table class="colwidths-auto table">
 <thead>
@@ -311,15 +311,15 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>B_ONEMODEL</p></td>
+<tr class="row-even"><td><p>P_LOAD_CSP</p></td>
 <td><p>jdbc:teradata://10.68.64.168/TMODE=TERA,CHARSET=ASCII,CLIENT_CHARSET=MS950,LOB_SUPPORT=OFF</p></td>
-<td><p>F3A5806FF36F36D96C1F8E4310F6ECC0</p></td>
-<td><p>Ql9PTkVNT0RFTA==</p></td>
+<td><p>50D85DAC17DFE8F9C868BB588DD3799F</p></td>
+<td><p>b2RzcHN0YWdlY3NwIA==</p></td>
 </tr>
 <tr class="row-odd"><td><p>DAS2CRMODS</p></td>
-<td><p>jdbc:teradata://10.68.64.168/TMODE=TERA,CHARSET=ASCII,CLIENT_CHARSET=MS950,LOB_SUPPORT=OFF</p></td>
-<td><p>4AE5C97BEC9B59C93F073CF64CA8AB47</p></td>
-<td><p>ZGFzMmNybW9kcw==</p></td>
+<td><p>jdbc:sqlserver://10.140.0.2:1433;useUnicode=true;characterEncoding=UTF-8</p></td>
+<td><p>A9E27EB342A4852D08AEB6EC9CEB4DF9</p></td>
+<td><p>disxMjM0NTY=</p></td>
 </tr>
 </tbody>
 </table>
@@ -349,11 +349,11 @@
 <span class="kn">import</span> <span class="nn">base64</span>
 
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;file/2800_pwd_list.xlsx&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;openpyxl&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;file/pwd_list.xlsx&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;openpyxl&#39;</span><span class="p">)</span>
 
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;real_pwd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;base64_pwd&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">))</span>
 
-<span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;file/2800_pwd_list_ANSWER.xlsx&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;file/pwd_list_ANSWER.xlsx&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -404,7 +404,7 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">subprocess</span>
 
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;file/2800_pwd_list.xlsx&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;openpyxl&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;file/pwd_list.xlsx&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;openpyxl&#39;</span><span class="p">)</span>
 
 <span class="n">pwd_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 <span class="n">pwd_dict</span> <span class="o">=</span> <span class="p">{}</span>
@@ -431,7 +431,7 @@
 
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;java_pwd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">pwd_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
 
-<span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;file/2800_pwd_list_ANSWER.xlsx&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;file/pwd_list_ANSWER.xlsx&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
