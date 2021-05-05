@@ -99,7 +99,7 @@
 </p>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="PART1.html">
+  <a class="reference internal" href="../PART1.html">
    第一部分 ： Python 的 基礎
   </a>
   <ul class="current collapse-ul">
@@ -150,7 +150,7 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../PartII/PART2.html">
+  <a class="reference internal" href="../PART2.html">
    第二部分 ： Python 的 實際應用 小程式
   </a>
  </li>
@@ -192,10 +192,7 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/PartI/Basic4-5.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/PartI/Basic4-5.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
@@ -229,23 +226,6 @@
                         class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/fiamma66/InnerTrainning/master?urlpath=tree/PartI/Basic4-5.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
 
         </div>
 
@@ -343,9 +323,7 @@
 </div>
 <div class="section" id="id2">
 <h3>小練習 1 參考解答<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
 
 <span class="c1"># 連線 94 這麼簡單</span>
 <span class="n">connection</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;10.140.0.2&#39;</span><span class="p">,</span> <span class="n">dbname</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">)</span>
@@ -386,8 +364,6 @@
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
 <p>輸出成報表後</p>
 <p>用 Excel 給他打開下去吧！</p>
 <div class="admonition note">
@@ -422,6 +398,7 @@
 <p>那我們勢必在寫檔時，要去替換有雙引號的地方</p>
 <p>很麻煩吧 ！</p>
 <p><b><font size=4> 沒事 ！ </font></b> 這邊有好用的套件 <b><font size=3> <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> </font></b> 幫我們處理</p>
+<!-- #region -->
 <div class="section" id="id3">
 <h3>安裝 Pandas<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>一樣使用 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 來安裝</p>
@@ -451,6 +428,8 @@
 </pre></div>
 </div>
 </div>
+<!-- #endregion -->
+<!-- #region -->
 </div>
 </div>
 <div class="section" id="id4">
@@ -483,9 +462,8 @@
 <p>文件中建議使用 <code class="docutils literal notranslate"><span class="pre">SQLAlchemy</span></code> Library</p>
 <p><a class="reference external" href="https://docs.sqlalchemy.org/en/14/dialects/postgresql.html#module-sqlalchemy.dialects.postgresql.psycopg2">只稍微看一下</a></p>
 </div>
-<div class="cell tag_hide-output tag_show-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<!-- #endregion -->
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql</span><span class="o">=</span><span class="n">sql</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">connection</span><span class="p">)</span>
 
@@ -493,300 +471,11 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>busentityname</th>
-      <th>categoryname</th>
-      <th>jobname</th>
-      <th>stepname</th>
-      <th>command</th>
-      <th>embedded_script</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_FINTARGETTEAM</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_STOCKSALES_DATETYPE</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_STOREHOURSALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_TAXREFUND</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_TANAITEMSALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_TANADETAILSALES_MON</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_TANADETAILSALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_STORESALESTARGET_MONTH</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_STORESALESTARGET</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_STOREITEMSALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_KEYITEMEVENTDETAIL</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_STOREGROUPSALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_STOREDAY</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_STOCKSTOREITEM_MON</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_STOCKSALES_14D</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_STOCKITEMSALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_PROMOITEMSALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_PAYMENTSALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_PAYMENTPROMOSALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_KEYITEMEVENTTARGET</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_DEPTSALESTARGET</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_ITEMSALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_INVOICESALES</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_INVOICEDETAILSALES_TODAY</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_INVOICEDETAILSALES_FAST</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_INCOMESTATEMENT_A</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_INCOMESTATEMENT</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Z_COSMED</td>
-      <td>EXT</td>
-      <td>EXT_GROUPSALESTARGET</td>
-      <td>EXTRACT</td>
-      <td>${EMBEDDED_SCRIPT}</td>
-      <td>"${TABLEAU_PATH}" refreshextracts --server ${T...</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-</div>
 <div class="section" id="pandas-export-csv">
 <h3>Pandas Export CSV<a class="headerlink" href="#pandas-export-csv" title="Permalink to this headline">¶</a></h3>
 <p>最後，讓 Pandas 幫我們輸出 CSV</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;file/report_pandas.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;file/report_pandas.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

@@ -99,7 +99,7 @@
 </p>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="PART1.html">
+  <a class="reference internal" href="../PART1.html">
    第一部分 ： Python 的 基礎
   </a>
   <ul class="current collapse-ul">
@@ -150,7 +150,7 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../PartII/PART2.html">
+  <a class="reference internal" href="../PART2.html">
    第二部分 ： Python 的 實際應用 小程式
   </a>
  </li>
@@ -192,10 +192,7 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/PartI/Basic4.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/PartI/Basic4.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
@@ -230,23 +227,6 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/fiamma66/InnerTrainning/master?urlpath=tree/PartI/Basic4.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
@@ -268,6 +248,11 @@
      Import 裡面的小彩蛋
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     試玩一下 import
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -276,7 +261,7 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
+    <a class="reference internal nav-link" href="#id2">
      安裝後測試
     </a>
    </li>
@@ -301,6 +286,7 @@
                 
   <div class="section" id="python-package-1">
 <h1>Python 的基礎 - Package 的使用與安裝 1<a class="headerlink" href="#python-package-1" title="Permalink to this headline">¶</a></h1>
+<!-- #region -->
 <div class="section" id="package-module">
 <h2>首先介紹 Package / Module 的使用<a class="headerlink" href="#package-module" title="Permalink to this headline">¶</a></h2>
 <p>要使用別人寫好的 Package / Module</p>
@@ -325,14 +311,15 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 </pre></div>
 </div>
+<!-- #endregion -->
+<!-- #region -->
 <p>之後我們就能夠使用 <code class="docutils literal notranslate"><span class="pre">math</span></code> 中的好用 function</p>
 <p>比如 取進位值的 <a class="reference external" href="https://www.w3schools.com/python/ref_math_ceil.asp">math.ceil</a></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="cell tag_hide-output tag_show-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<!-- #endregion -->
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">1.4</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">5.3</span><span class="p">))</span>
@@ -341,53 +328,23 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">10.0</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
-6
--5
-23
-10
-</pre></div>
-</div>
-</div>
-</div>
 <div class="section" id="import">
 <h3>Import 裡面的小彩蛋<a class="headerlink" href="#import" title="Permalink to this headline">¶</a></h3>
 <p>如果對於 import 的 .py 檔案在哪裡有疑問的話</p>
 <p>可以先這樣做</p>
-<div class="cell tag_hide-output tag_show-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
 
 
 <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/fiammahsu/Workplace/Resource/T_Python(各開發測試)/InnerTrainning/PartI
-/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python39.zip
-/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python3.9
-/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload
-
-/usr/local/lib/python3.9/site-packages
-/usr/local/opt/python-tk@3.9/libexec
-/usr/local/lib/python3.9/site-packages/IPython/extensions
-/Users/fiammahsu/.ipython
-</pre></div>
-</div>
-</div>
-</div>
 <p>除了 IPython 是 Jupyter 專用的東西以外</p>
 <p>其他的路徑就是 python 尋找那些額外安裝的 Package 的路徑</p>
 <p>在其中會有一隻  <code class="docutils literal notranslate"><span class="pre">this.py</span></code>  的檔案，就是小彩蛋</p>
 <p>可以打開來看一下，如果你拿不到（我們的 NoteBook Server 有相關權限）</p>
 <p>可以直接看下面</p>
-<div class="cell tag_hide-output tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Gur Mra bs Clguba, ol Gvz Crgref</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Gur Mra bs Clguba, ol Gvz Crgref</span>
 
 <span class="s2">Ornhgvshy vf orggre guna htyl.</span>
 <span class="s2">Rkcyvpvg vf orggre guna vzcyvpvg.</span>
@@ -417,38 +374,52 @@
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">]))</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren&#39;t special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you&#39;re Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it&#39;s a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let&#39;s do more of those!
-</pre></div>
-</div>
-</div>
-</div>
+<!-- #region -->
 <p>接著我們試試看 import this</p>
 <p>會發現他幫你印出了一個叫做 The Zen Of Python 的文章，大致的主題是整個 Python 語言的良好寫作方式</p>
 <p>你應該會好奇，為什麼只是 import 會打出這些文章</p>
 <p><font size=5><strong>實際上 import 做的事情，是幫你執行該.py檔案</strong></font></p>
 <p>所以 <code class="docutils literal notranslate"><span class="pre">this.py</span></code> 裡最下面的那些會被執行</p>
+<!-- #endregion -->
+</div>
+<div class="section" id="id1">
+<h3>試玩一下 import<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>若使用本機的 Jupyter Notebook 的話</p>
+<p>就手動建一個 <code class="docutils literal notranslate"><span class="pre">py</span></code> 檔案</p>
+<p>用 Notebook Server 的話</p>
+<p>請使用</p>
+<p><img alt="text" src="../_images/jupytext.png" /></p>
+<p>來建立 <code class="docutils literal notranslate"><span class="pre">py</span></code> 檔</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>我們的 NoteBook Server 有額外裝 <code class="docutils literal notranslate"><span class="pre">NB</span> <span class="pre">Extension</span></code></p>
+<p>這邊使用的 Extension 為 <code class="docutils literal notranslate"><span class="pre">Jupytext</span></code></p>
+<p>一般 Jupyter Notebook 會把 <code class="docutils literal notranslate"><span class="pre">py</span></code> 檔案當成文字檔</p>
+</div>
+<p>之後我們隨意寫一些 變數 、 Function 來給我們 import</p>
+<div class="admonition-def admonition">
+<p class="admonition-title">使用 def</p>
+<p>Python 建立 Function （ Method ）</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">FUNCTION_NAME</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">args</span> <span class="o">+</span> <span class="n">SOMETHING</span>
+    <span class="k">return</span> <span class="n">answer</span>
+    
+    
+<span class="n">answer</span> <span class="o">=</span> <span class="n">FUNCTION_NAME</span><span class="p">(</span><span class="n">args1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>接下來 <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">PY</span></code> 檔</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">lib</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">lib</span><span class="o">.</span><span class="n">var</span><span class="p">)</span>
+
+<span class="n">ab</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">lib</span><span class="o">.</span><span class="n">function</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="package">
@@ -507,8 +478,8 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </div>
 <p>再重新安裝 psycopg2 應該就沒問題了</p>
 </div>
-<div class="section" id="id1">
-<h3>安裝後測試<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>安裝後測試<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>有兩個方法可以確認是否安裝完成</p>
 <ul class="simple">
 <li><p>第一種： 確認 pip Package</p></li>
@@ -540,9 +511,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <p>User Name = trinity</p>
 <p>Password = trinity</p>
 </div>
-<div class="cell tag_hide-output tag_show-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
 
 <span class="c1"># 連線 94 這麼簡單</span>
 <span class="n">connection</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;10.140.0.2&#39;</span><span class="p">,</span> <span class="n">dbname</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;trinity&#39;</span><span class="p">)</span>
@@ -570,40 +539,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
     <span class="nb">print</span><span class="p">(</span><span class="n">rs</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_FINTARGETTEAM&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_STOCKSALES_DATETYPE&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_STOREHOURSALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_TAXREFUND&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_TANAITEMSALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_TANADETAILSALES_MON&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_TANADETAILSALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_STORESALESTARGET_MONTH&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_STORESALESTARGET&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_STOREITEMSALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_KEYITEMEVENTDETAIL&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_STOREGROUPSALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_STOREDAY&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_STOCKSTOREITEM_MON&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_STOCKSALES_14D&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_STOCKITEMSALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_PROMOITEMSALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_PAYMENTSALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_PAYMENTPROMOSALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_KEYITEMEVENTTARGET&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_DEPTSALESTARGET&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_ITEMSALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_INVOICESALES&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_INVOICEDETAILSALES_TODAY&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_INVOICEDETAILSALES_FAST&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_INCOMESTATEMENT_A&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_INCOMESTATEMENT&#39;)
-(&#39;Z_COSMED&#39;, &#39;EXT&#39;, &#39;EXT_GROUPSALESTARGET&#39;)
-</pre></div>
-</div>
-</div>
-</div>
+<!-- #region -->
 <div class="dropdown admonition">
 <p class="admonition-title">cursor 有些小知識</p>
 <div class="admonition-from-psycopg2-doc admonition">
@@ -623,6 +559,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </pre></div>
 </div>
 </div>
+<!-- #endregion -->
 <p>可以看到每一筆資料的長相</p>
 <p>大概是這樣 每一筆</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BUSENTITY_NAME</span>  <span class="n">CATEGORY_NAME</span>  <span class="n">JOB_NAME</span>
@@ -635,9 +572,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <p>可以發現，回傳的資料每筆都是  <code class="docutils literal notranslate"><span class="pre">Tuple</span></code>  型態</p>
 <p>所以剛才的 rs，就可以像 List 一樣使用 Index 來找指定元素</p>
 </div>
-<div class="cell tag_hide-output tag_show-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 重新執行 SQL</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 重新執行 SQL</span>
 <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
 
 <span class="c1"># cursor object is iterable</span>
@@ -647,124 +582,6 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Job Name : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rs</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;==================&#39;</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_FINTARGETTEAM
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_STOCKSALES_DATETYPE
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_STOREHOURSALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_TAXREFUND
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_TANAITEMSALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_TANADETAILSALES_MON
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_TANADETAILSALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_STORESALESTARGET_MONTH
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_STORESALESTARGET
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_STOREITEMSALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_KEYITEMEVENTDETAIL
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_STOREGROUPSALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_STOREDAY
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_STOCKSTOREITEM_MON
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_STOCKSALES_14D
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_STOCKITEMSALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_PROMOITEMSALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_PAYMENTSALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_PAYMENTPROMOSALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_KEYITEMEVENTTARGET
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_DEPTSALESTARGET
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_ITEMSALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_INVOICESALES
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_INVOICEDETAILSALES_TODAY
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_INVOICEDETAILSALES_FAST
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_INCOMESTATEMENT_A
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_INCOMESTATEMENT
-==================
-Business Entity : Z_COSMED
-Category Name : EXT
-Job Name : EXT_GROUPSALESTARGET
-==================
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 </div>

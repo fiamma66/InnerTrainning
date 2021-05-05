@@ -54,7 +54,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="第二部分 ： Python 的 實際應用 小程式" href="../PartII/PART2.html" />
+    <link rel="next" title="第二部分 ： Python 的 實際應用 小程式" href="../PART2.html" />
     <link rel="prev" title="Python Lab 1" href="Basic5.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -99,7 +99,7 @@
 </p>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="PART1.html">
+  <a class="reference internal" href="../PART1.html">
    第一部分 ： Python 的 基礎
   </a>
   <ul class="current collapse-ul">
@@ -150,7 +150,7 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../PartII/PART2.html">
+  <a class="reference internal" href="../PART2.html">
    第二部分 ： Python 的 實際應用 小程式
   </a>
  </li>
@@ -404,12 +404,11 @@
 </div>
 <div class="section" id="id1">
 <h3>參考解答<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>無標準答案 ， 請作為參考</p>
 <div class="dropdown admonition">
 <p class="admonition-title">請參考</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
-<span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
 <span class="kn">import</span> <span class="nn">psycopg2</span>
-
 
 <span class="n">default_output_dir</span> <span class="o">=</span> <span class="s1">&#39;file/SQL/&#39;</span>
 
@@ -430,7 +429,6 @@
 <span class="k">def</span> <span class="nf">extract_sql</span><span class="p">(</span><span class="n">stepxml</span><span class="p">,</span> <span class="n">xml</span><span class="p">):</span> 
     <span class="c1"># Return sql list</span>
     <span class="n">sql_list</span> <span class="o">=</span> <span class="p">[]</span>
-    
     <span class="k">if</span> <span class="n">xml</span><span class="p">:</span>
         <span class="n">_xml</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">xml</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -465,7 +463,6 @@
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">count</span><span class="p">,</span> <span class="n">rs</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cur</span><span class="p">):</span>
-    
     <span class="k">if</span> <span class="n">count</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
 <span class="c1">#         print(&#39;Rows Processed : {}&#39;.format(count))</span>
 <span class="c1">#         print(rs)</span>
@@ -490,8 +487,6 @@
 
             <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">_f_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
                 <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">_s</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-
 
 <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
@@ -557,6 +552,8 @@
 </div>
 <div class="section" id="id2">
 <h3>參考解答<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>這一題可能較為深入</p>
+<p>雖然講起來好像是基本</p>
 <div class="dropdown admonition">
 <p class="admonition-title">請參考，這題比較深</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
@@ -770,7 +767,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="Basic5.html" title="previous page">Python Lab 1</a>
-    <a class='right-next' id="next-link" href="../PartII/PART2.html" title="next page">第二部分 ： Python 的 實際應用 小程式</a>
+    <a class='right-next' id="next-link" href="../PART2.html" title="next page">第二部分 ： Python 的 實際應用 小程式</a>
 
         </div>
         

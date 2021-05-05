@@ -99,7 +99,7 @@
 </p>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="PART1.html">
+  <a class="reference internal" href="../PART1.html">
    第一部分 ： Python 的 基礎
   </a>
   <ul class="current collapse-ul">
@@ -150,7 +150,7 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../PartII/PART2.html">
+  <a class="reference internal" href="../PART2.html">
    第二部分 ： Python 的 實際應用 小程式
   </a>
  </li>
@@ -192,10 +192,7 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/PartI/Basic3.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/PartI/Basic3.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
@@ -229,23 +226,6 @@
                         class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/fiamma66/InnerTrainning/master?urlpath=tree/PartI/Basic3.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
 
         </div>
 
@@ -310,6 +290,11 @@
   <a class="reference internal nav-link" href="#encoding">
    Encoding 問題
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#region">
+   <!-- #region -->
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id8">
@@ -365,40 +350,23 @@
 <p>若你有點混亂的話，隨時使用 <code class="docutils literal notranslate"><span class="pre">!pwd</span></code> 搭配 <code class="docutils literal notranslate"><span class="pre">!ls</span></code> 來確認當前所在目錄</p>
 <p>Windows 的環境，請使用 <code class="docutils literal notranslate"><span class="pre">!cd</span></code> 和 <code class="docutils literal notranslate"><span class="pre">!dir</span></code> 來達到相同效果</p>
 </div>
-<div class="cell tag_hide-output tag_show-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 使用 「 ! 」 開頭 可以呼叫 shell &amp; cmd</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span># 使用 「 ! 」 開頭 可以呼叫 shell &amp; cmd
 
 
-<span class="c1"># MacOS / Linux</span>
-<span class="o">!</span>pwd
+# MacOS / Linux
+!pwd
 
 
-<span class="c1"># Windows</span>
-<span class="o">!</span>cd
+# Windows
+!cd
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/fiammahsu/Workplace/Resource/T_Python(各開發測試)/InnerTrainning/PartI
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 確認 檔案在當前目錄</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span># 確認 檔案在當前目錄
 
-<span class="o">!</span>ls file/wiki_python.txt
+!ls file/wiki_python.txt
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>file/wiki_python.txt
-</pre></div>
-</div>
-</div>
-</div>
+<!-- #region tags=["hide-output", "show-input"] -->
 </div>
 <div class="section" id="id2">
 <h2>讀檔<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
@@ -430,6 +398,7 @@
 <li><p>  <code class="docutils literal notranslate"><span class="pre">a</span></code>   寫檔，append。跟 <code class="docutils literal notranslate"><span class="pre">w</span></code> 不同在於，一個會加在檔案最後，一個則直接全部覆蓋</p></li>
 </ol>
 </div>
+<!-- #endregion -->
 <div class="section" id="id3">
 <h3>小練習 1<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>剛剛開啟的檔案</p>
@@ -453,9 +422,7 @@
 </div>
 <div class="section" id="id4">
 <h4>小練習 1 參考解答<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
-<div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">wiki</span> <span class="o">=</span> <span class="s1">&#39;file/wiki_python.txt&#39;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">wiki</span> <span class="o">=</span> <span class="s1">&#39;file/wiki_python.txt&#39;</span>
 
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 <span class="n">content</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -486,269 +453,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;python&#39;: 25,
- &#39;is&#39;: 5,
- &#39;an&#39;: 1,
- &#39;interpreted&#39;: 1,
- &#39;highlevel&#39;: 1,
- &#39;generalpurpose&#39;: 1,
- &#39;programming&#39;: 6,
- &#39;language&#39;: 7,
- &#39;pythons&#39;: 2,
- &#39;design&#39;: 1,
- &#39;philosophy&#39;: 1,
- &#39;emphasizes&#39;: 1,
- &#39;code&#39;: 6,
- &#39;readability&#39;: 1,
- &#39;with&#39;: 5,
- &#39;its&#39;: 6,
- &#39;notable&#39;: 1,
- &#39;use&#39;: 1,
- &#39;of&#39;: 12,
- &#39;significant&#39;: 1,
- &#39;indentation&#39;: 1,
- &#39;constructs&#39;: 1,
- &#39;as&#39;: 13,
- &#39;well&#39;: 1,
- &#39;objectoriented&#39;: 2,
- &#39;approach&#39;: 1,
- &#39;aim&#39;: 1,
- &#39;to&#39;: 12,
- &#39;help&#39;: 1,
- &#39;programmers&#39;: 1,
- &#39;write&#39;: 1,
- &#39;clear&#39;: 1,
- &#39;logical&#39;: 1,
- &#39;for&#39;: 6,
- &#39;small&#39;: 1,
- &#39;and&#39;: 16,
- &#39;largescale&#39;: 1,
- &#39;projects&#39;: 2,
- &#39;dynamicallytyped&#39;: 1,
- &#39;garbagecollected&#39;: 1,
- &#39;it&#39;: 4,
- &#39;supports&#39;: 1,
- &#39;multiple&#39;: 1,
- &#39;paradigms&#39;: 1,
- &#39;including&#39;: 3,
- &#39;structured&#39;: 1,
- &#39;particularly&#39;: 1,
- &#39;procedural&#39;: 1,
- &#39;functional&#39;: 1,
- &#39;often&#39;: 1,
- &#39;described&#39;: 1,
- &#39;a&#39;: 12,
- &#39;batteries&#39;: 1,
- &#39;included&#39;: 1,
- &#39;due&#39;: 1,
- &#39;comprehensive&#39;: 1,
- &#39;standard&#39;: 1,
- &#39;library&#39;: 1,
- &#39;guido&#39;: 3,
- &#39;van&#39;: 5,
- &#39;rossum&#39;: 5,
- &#39;began&#39;: 2,
- &#39;working&#39;: 1,
- &#39;on&#39;: 4,
- &#39;in&#39;: 9,
- &#39;the&#39;: 16,
- &#39;late&#39;: 2,
- &#39;1980s&#39;: 2,
- &#39;successor&#39;: 2,
- &#39;abc&#39;: 2,
- &#39;first&#39;: 1,
- &#39;released&#39;: 6,
- &#39;1991&#39;: 1,
- &#39;090&#39;: 1,
- &#39;20&#39;: 2,
- &#39;was&#39;: 10,
- &#39;2000&#39;: 2,
- &#39;introduced&#39;: 1,
- &#39;new&#39;: 2,
- &#39;features&#39;: 3,
- &#39;such&#39;: 1,
- &#39;list&#39;: 1,
- &#39;comprehensions&#39;: 1,
- &#39;garbage&#39;: 2,
- &#39;collection&#39;: 1,
- &#39;system&#39;: 2,
- &#39;using&#39;: 1,
- &#39;reference&#39;: 1,
- &#39;counting&#39;: 1,
- &#39;discontinued&#39;: 1,
- &#39;version&#39;: 2,
- &#39;2718&#39;: 1,
- &#39;2020&#39;: 3,
- &#39;30&#39;: 2,
- &#39;2008&#39;: 2,
- &#39;major&#39;: 4,
- &#39;revision&#39;: 2,
- &#39;that&#39;: 3,
- &#39;not&#39;: 4,
- &#39;completely&#39;: 2,
- &#39;backwardcompatible&#39;: 2,
- &#39;much&#39;: 1,
- &#39;2&#39;: 2,
- &#39;does&#39;: 1,
- &#39;run&#39;: 1,
- &#39;unmodified&#39;: 1,
- &#39;3&#39;: 5,
- &#39;consistently&#39;: 1,
- &#39;ranks&#39;: 1,
- &#39;one&#39;: 1,
- &#39;most&#39;: 1,
- &#39;popular&#39;: 1,
- &#39;languages&#39;: 1,
- &#39;history&#39;: 1,
- &#39;conceived&#39;: 1,
- &#39;by&#39;: 2,
- &#39;at&#39;: 3,
- &#39;centrum&#39;: 1,
- &#39;wiskunde&#39;: 1,
- &#39;informatica&#39;: 1,
- &#39;cwi&#39;: 1,
- &#39;netherlands&#39;: 1,
- &#39;which&#39;: 2,
- &#39;inspired&#39;: 1,
- &#39;setl&#39;: 1,
- &#39;capable&#39;: 1,
- &#39;exception&#39;: 1,
- &#39;handling&#39;: 1,
- &#39;interfacing&#39;: 1,
- &#39;amoeba&#39;: 1,
- &#39;operating&#39;: 1,
- &#39;implementation&#39;: 1,
- &#39;december&#39;: 2,
- &#39;1989&#39;: 1,
- &#39;shouldered&#39;: 1,
- &#39;sole&#39;: 1,
- &#39;responsibility&#39;: 1,
- &#39;project&#39;: 2,
- &#39;lead&#39;: 2,
- &#39;developer&#39;: 1,
- &#39;until&#39;: 1,
- &#39;12&#39;: 1,
- &#39;july&#39;: 1,
- &#39;2018&#39;: 1,
- &#39;when&#39;: 1,
- &#39;he&#39;: 2,
- &#39;announced&#39;: 1,
- &#39;his&#39;: 5,
- &#39;permanent&#39;: 1,
- &#39;vacation&#39;: 1,
- &#39;from&#39;: 1,
- &#39;responsibilities&#39;: 1,
- &#39;benevolent&#39;: 1,
- &#39;dictator&#39;: 1,
- &#39;life&#39;: 1,
- &#39;title&#39;: 1,
- &#39;community&#39;: 1,
- &#39;bestowed&#39;: 1,
- &#39;upon&#39;: 1,
- &#39;him&#39;: 1,
- &#39;reflect&#39;: 1,
- &#39;longterm&#39;: 1,
- &#39;commitment&#39;: 1,
- &#39;chief&#39;: 1,
- &#39;decisionmaker&#39;: 1,
- &#39;now&#39;: 1,
- &#39;shares&#39;: 1,
- &#39;leadership&#39;: 1,
- &#39;member&#39;: 1,
- &#39;fiveperson&#39;: 1,
- &#39;steering&#39;: 3,
- &#39;council&#39;: 3,
- &#39;january&#39;: 1,
- &#39;2019&#39;: 1,
- &#39;active&#39;: 1,
- &#39;core&#39;: 1,
- &#39;developers&#39;: 1,
- &#39;elected&#39;: 1,
- &#39;brett&#39;: 1,
- &#39;cannon&#39;: 1,
- &#39;nick&#39;: 1,
- &#39;coghlan&#39;: 1,
- &#39;barry&#39;: 1,
- &#39;warsaw&#39;: 1,
- &#39;carol&#39;: 1,
- &#39;willing&#39;: 1,
- &#39;fivemember&#39;: 1,
- &#39;has&#39;: 1,
- &#39;since&#39;: 1,
- &#39;then&#39;: 2,
- &#39;withdrawn&#39;: 1,
- &#39;nomination&#39;: 1,
- &#39;16&#39;: 1,
- &#39;october&#39;: 1,
- &#39;many&#39;: 2,
- &#39;cycledetecting&#39;: 1,
- &#39;collector&#39;: 1,
- &#39;support&#39;: 1,
- &#39;unicode&#39;: 1,
- &#39;were&#39;: 2,
- &#39;backported&#39;: 1,
- &#39;26x&#39;: 1,
- &#39;27x&#39;: 1,
- &#39;series&#39;: 1,
- &#39;releases&#39;: 1,
- &#39;include&#39;: 1,
- &#39;2to3&#39;: 1,
- &#39;utility&#39;: 1,
- &#39;automates&#39;: 1,
- &#39;least&#39;: 1,
- &#39;partially&#39;: 1,
- &#39;translation&#39;: 1,
- &#39;27s&#39;: 1,
- &#39;endoflife&#39;: 2,
- &#39;date&#39;: 1,
- &#39;initially&#39;: 1,
- &#39;set&#39;: 1,
- &#39;2015&#39;: 1,
- &#39;postponed&#39;: 1,
- &#39;out&#39;: 1,
- &#39;concern&#39;: 1,
- &#39;large&#39;: 1,
- &#39;body&#39;: 1,
- &#39;existing&#39;: 1,
- &#39;could&#39;: 1,
- &#39;easily&#39;: 1,
- &#39;be&#39;: 2,
- &#39;forwardported&#39;: 1,
- &#39;no&#39;: 1,
- &#39;more&#39;: 1,
- &#39;security&#39;: 2,
- &#39;patches&#39;: 1,
- &#39;or&#39;: 1,
- &#39;other&#39;: 1,
- &#39;improvements&#39;: 1,
- &#39;will&#39;: 1,
- &#39;2s&#39;: 1,
- &#39;only&#39;: 1,
- &#39;36x&#39;: 1,
- &#39;later&#39;: 1,
- &#39;are&#39;: 1,
- &#39;supported&#39;: 1,
- &#39;392&#39;: 1,
- &#39;388&#39;: 1,
- &#39;expedited&#39;: 1,
- &#39;all&#39;: 1,
- &#39;versions&#39;: 1,
- &#39;27&#39;: 1,
- &#39;had&#39;: 1,
- &#39;issues&#39;: 1,
- &#39;leading&#39;: 1,
- &#39;possible&#39;: 1,
- &#39;remote&#39;: 1,
- &#39;execution&#39;: 1,
- &#39;web&#39;: 1,
- &#39;cache&#39;: 1,
- &#39;poisoning&#39;: 1}
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="id5">
@@ -763,6 +467,7 @@
 <li><p>Windows  –&gt; CP950</p></li>
 </ul>
 </div>
+<!-- #region -->
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
 <span class="c1"># 不指定 encoding  --&gt;  OS系統預設</span>
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file/寫檔囉.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
@@ -780,6 +485,8 @@
 
 </pre></div>
 </div>
+<!-- #endregion -->
+<!-- #region -->
 <div class="section" id="id6">
 <h3>小練習 2<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>剛才我們已經算出 wiki_python.txt 中的 word count</p>
@@ -803,9 +510,8 @@
 </div>
 <div class="section" id="id7">
 <h4>小練習 2 參考解答<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
-<div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 記得寫檔案位置 跟開檔案位置 不要一樣 不然會覆蓋過去喔</span>
+<!-- #endregion -->
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 記得寫檔案位置 跟開檔案位置 不要一樣 不然會覆蓋過去喔</span>
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file/word_count.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">counter</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
@@ -817,8 +523,6 @@
     
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
 </div>
 <div class="dropdown admonition">
 <p class="admonition-title">小祕技 <em>現在略過也沒關係的</em></p>
@@ -852,6 +556,7 @@
 </pre></div>
 </div>
 </div>
+<!-- #region -->
 </div>
 </div>
 </div>
@@ -881,6 +586,8 @@
 <p>代表 寫入/讀取 使用 Byte Object</p>
 </div>
 <p>故 python內，轉換 Encoding，就是 –&gt; 讀入<code class="docutils literal notranslate"><span class="pre">Byte</span></code> –&gt; 轉成<code class="docutils literal notranslate"><span class="pre">String</span></code>(一開始的Encoding) –&gt; 轉成<code class="docutils literal notranslate"><span class="pre">Byte</span></code>(寫出的Encoding)</p>
+<!-- #endregion -->
+<!-- #region -->
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file/寫檔囉.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 
@@ -894,7 +601,10 @@
 
 </pre></div>
 </div>
-<hr class="docutils" />
+<!-- #endregion -->
+</div>
+<div class="section" id="region">
+<h2><!-- #region --><a class="headerlink" href="#region" title="Permalink to this headline">¶</a></h2>
 <p>上面便是簡單的 Encode 處理</p>
 <p>不過，如果遇到 Excel 檔案時，會有些小問題</p>
 <ul class="simple">
@@ -904,36 +614,18 @@
 <p>應該會看到一個奇怪的字元</p>
 <p><img alt="img" src="../_images/utf8bom.png" /></p>
 <p>實際用 python 來看看到底是什麼吧</p>
-<div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># b Mode 可以搭配 &#39;w&#39; or &#39;a&#39; or &#39;r&#39;</span>
+<!-- #endregion -->
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># b Mode 可以搭配 &#39;w&#39; or &#39;a&#39; or &#39;r&#39;</span>
 <span class="c1"># &#39;rb&#39; 則為 Read Byte Mode</span>
 <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file/aa.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;\ufeff--我是來搞你的檔案\n\nㄎ\n\nㄎ\n\nㄏ\n\nㄏ&#39;
-</pre></div>
-</div>
-</div>
-</div>
 <p>可以發現到 前面有個 <code class="docutils literal notranslate"><span class="pre">\ufeff</span></code></p>
 <p>而這個東西實際的 Byte 是</p>
-<div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\ufeff</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\ufeff</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;轉換正確編碼就會變成 ： </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xef\xbb\xbf</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;UTF-8-sig&#39;</span><span class="p">)))</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>b&#39;\xef\xbb\xbf&#39;
-轉換正確編碼就會變成 ： 
-</pre></div>
-</div>
-</div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -943,6 +635,7 @@
 <p>不過你不會希望在 .btq 或 .perl 檔案中看到他</p>
 <p>他會讓你錯都不知道錯在哪裡 ！</p>
 </div>
+<!-- #region -->
 <div class="section" id="id8">
 <h3>小結論<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -950,6 +643,7 @@
 <li><p><strong>因為肉眼無法看出 (編輯器問題) 檔案是否隱藏了 BOM (Byte Order Mark)</strong></p></li>
 </ul>
 <p><img alt="IMG" src="../_images/encode.png" /></p>
+<!-- #endregion -->
 </div>
 </div>
 </div>

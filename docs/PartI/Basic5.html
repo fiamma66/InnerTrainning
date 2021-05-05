@@ -99,7 +99,7 @@
 </p>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="PART1.html">
+  <a class="reference internal" href="../PART1.html">
    第一部分 ： Python 的 基礎
   </a>
   <ul class="current collapse-ul">
@@ -150,7 +150,7 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../PartII/PART2.html">
+  <a class="reference internal" href="../PART2.html">
    第二部分 ： Python 的 實際應用 小程式
   </a>
  </li>
@@ -192,10 +192,7 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/PartI/Basic5.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/PartI/Basic5.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
@@ -229,23 +226,6 @@
                         class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/fiamma66/InnerTrainning/master?urlpath=tree/PartI/Basic5.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
 
         </div>
 
@@ -300,6 +280,7 @@
 <p>下面我們就以實際例子來做幾個 Lab</p>
 <div class="section" id="lab-1">
 <h2>Lab 1<a class="headerlink" href="#lab-1" title="Permalink to this headline">¶</a></h2>
+<!-- #region -->
 <p>在 <code class="docutils literal notranslate"><span class="pre">file</span></code> 下有個 <code class="docutils literal notranslate"><span class="pre">pwd_list.xlsx</span></code></p>
 <p>裡面大概是這樣</p>
 <table class="colwidths-auto table">
@@ -341,11 +322,10 @@
 <p>使用上請注意 Base64 解碼與編碼， 都必須使用位元 （Byte Object）</p>
 </div>
 </div>
+<!-- #endregion -->
 <div class="section" id="id1">
 <h3>Lab 1 參考<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">base64</span>
 
 
@@ -355,8 +335,6 @@
 
 <span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;file/pwd_list_ANSWER.xlsx&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -399,6 +377,7 @@
 </div>
 <div class="section" id="id2">
 <h3>Lab 1.5 參考<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<!-- #region tags=["hide-output", "hide-input"] -->
 <div class="dropdown admonition">
 <p class="admonition-title">請參考</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">subprocess</span>
@@ -435,6 +414,7 @@
 </pre></div>
 </div>
 </div>
+<!-- #endregion -->
 </div>
 </div>
 </div>
